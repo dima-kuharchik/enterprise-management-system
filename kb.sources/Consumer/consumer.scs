@@ -1,0 +1,45 @@
+consumer => nrel_main_idtf: [consumer](*<- lang_en;;*);
+									[потребитель](*<- lang_ru;;*);
+		<- rrel_key_sc_element:...
+							(*
+								<- sc_definition;;
+								<= nrel_sc_text_translation:...
+								(*
+									-> rrel_example:
+										"file://product_definition_ru.html"
+										(*<- lang_ru;;*);
+										"file://product_definition_en.html"
+										(*<- lang_en;;*);;
+										
+								*);;
+							*);
+		(*
+			<= nrel_inclusion:
+				individual_consumer
+				(*
+					=> nrel_main_idtf: [individual consumer](*<-lang_en;;*);
+											[индивидуальный потребитель](*<- lang_ru;;*);;
+				*);
+				household_consumer
+				(*
+					=> nrel_main_idtf: [household consumer](*<- lang_en;;*);
+											[домашнее хозяйство-потребитель](*<- lang_ru;;*);
+					-> nrel_idtf: [семья-потребитель]	(*<- lang_ru;;*);;				
+				*);
+				intermediary_consumer
+				(*
+					=> nrel_main_idtf: [intermediary consumer](*<-lang_en;;*);
+											[потребитель-посредник]](*<- lang_ru;;*);;
+				*);
+				enterprise_consumer
+				(*
+					=> nrel_main_idtf: [enterprise consumer](*<-lang_en;;*);
+											[предприятие-потребитель](*<- lang_ru;;*);;
+				*);
+				official_consumer
+				(*
+					=> nrel_main_idtf: [official consumer](*<-lang_en;;*);
+											[должностное лицо-потребитель](*<- lang_ru;;*);;
+				*);;
+		*);;
+		

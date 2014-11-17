@@ -1,0 +1,15 @@
+activity => nrel_main_idtf: [activity](*<- lang_en;;*);
+								[деятельность](*<- lang_ru;;*);
+		<- rrel_key_sc_element:...
+							(*
+								<- sc_definition;;
+								<= nrel_sc_text_translation:...
+								(*
+									-> rrel_example:
+										"file://activity_definition_ru.html"
+										(*<- lang_ru;;*);
+										"file://activity_definition_en.html"
+										(*<- lang_en;;*);;
+										
+								*);;
+							*);	;							
