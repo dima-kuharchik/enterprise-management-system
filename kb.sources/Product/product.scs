@@ -1,16 +1,17 @@
-product => nrel_main_idtf:[product](*<-lang_en;;*);
+product
+	=> nrel_main_idtf:[product](*<-lang_en;;*);
 							[продукт](*<-lang_ru;;*);
-		<- rrel_key_sc_element:...
+	=> nrel_idtf: [продукция](*<- lang_ru;;*);						
+	<- rrel_key_sc_element:...
+						(*
+							<- sc_definition;;
+							<= nrel_sc_text_translation:...
 							(*
-								<- sc_definition;;
-								<= nrel_sc_text_translation:...
-								(*
-									-> rrel_example:
-										"file://product_definition_ru.html"
-										(*<- lang_ru;;*);
-										"file://product_definition_en.html"
-										(*<- lang_en;;*);;
-										
-								*);;
-							*);
-		=> nrel_inclusion: product_of_labor;;
+								-> rrel_example:
+									"file://product_definition_ru.html"
+									(*<- lang_ru;;*);
+									"file://product_definition_en.html"
+									(*<- lang_en;;*);;
+							*);;
+						*);
+	=> nrel_inclusion: product_of_labor;;

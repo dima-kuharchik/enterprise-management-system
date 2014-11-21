@@ -15,4 +15,4 @@ control => nrel_main_idtf:[control](*<-lang_en;;*);
 					*);;
 			*);
 		<= nrel_inclusion: process;
-		<- rrel_function: ruling;;
+		<- rrel_function: management;;
