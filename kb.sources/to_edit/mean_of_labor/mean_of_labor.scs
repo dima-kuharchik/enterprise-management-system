@@ -1,0 +1,15 @@
+mean_of_labor
+	=> nrel_main_idtf: [mean of labor](*<- lang_en;;*);
+			[средство труда](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://mean_of_labor_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: mean;
+	=> nrel_used_term: object_of_labor;;

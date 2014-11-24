@@ -1,0 +1,20 @@
+planning
+	=> nrel_main_idtf:[planning](*<-lang_en;;*);
+			[планирование](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://planning_definition_ru.html"
+					(*<- lang_ru;;*);
+					"file://planning_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<- rrel_function: management;
+	=> nrel_used_term: management; system; plan;;
+		
+		

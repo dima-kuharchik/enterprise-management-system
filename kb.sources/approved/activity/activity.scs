@@ -1,0 +1,43 @@
+activity
+	=> nrel_main_idtf: [activity](*<- lang_en;;*);
+			[деятельность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://activity_definition_ru.html"
+					(*<- lang_ru;;*);
+					"file://activity_definition_en.html"
+					(*<- lang_en;;*);;
+					
+			*);;
+		*);	
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_illustration
+			(*
+				<- rrel_key_sc_element:...
+				(*
+					<- sc_comment;;
+					<= nrel_sc_text_translation:...
+					(*
+						-> rrel_example:[Структурные компоненты деятельности]
+								(*<- lang_ru;;*);;
+					*);;
+				*);;
+			*);;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://activity_components.png";;
+			*);;
+		*);	
+	-> need;
+	-> motive;
+	-> goal;
+	-> problem;
+	-> technology;
+	-> action;
+	-> result;;

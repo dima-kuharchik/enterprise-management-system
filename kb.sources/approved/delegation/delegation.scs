@@ -1,0 +1,15 @@
+delegation
+	=> nrel_main_idtf: [delegation](*<- lang_en;;*);
+			[делегирование](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://delegation_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	=> nrel_used_term: duty; head; inferior;;

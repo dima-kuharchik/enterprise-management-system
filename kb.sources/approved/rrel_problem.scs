@@ -1,0 +1,5 @@
+rrel_problem
+	=> nrel_main_idtf:[problem](*<-lang_en;;*);
+			[задача](*<-lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;

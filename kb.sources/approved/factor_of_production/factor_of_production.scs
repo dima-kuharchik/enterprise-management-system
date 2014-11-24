@@ -1,0 +1,35 @@
+factor_of_production
+	=> nrel_main_idtf: [factor of production](*<- lang_en;;*);
+			[фактор производства](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://factor_of_production_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	-> nature_resource
+		(*
+			=> nrel_main_idtf: [nature resource](*<- lang_en;;*);
+					[природный ресурс](*<- lang_ru;;*);;
+		*); 
+	->	labor_force
+		(*
+			=> nrel_main_idtf: [labor force](*<- lang_en;;*);
+					[рабочая сила](*<- lang_ru;;*);;
+		*); 
+	->	capital
+		(*
+			=> nrel_main_idtf: [capital](*<- lang_en;;*);
+					[капитал](*<- lang_ru;;*);;
+		*); 
+	->	entrepreneurship
+		(*
+			=> nrel_main_idtf: [entrepreneurship](*<- lang_en;;*);
+					[предпринимательская деятельность](*<- lang_ru;;*);;
+		*);
+	<= nrel_inclusion: factor;
+	=> nrel_used_term: production; resource; product;;

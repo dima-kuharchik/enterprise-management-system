@@ -1,0 +1,13 @@
+system
+	=> nrel_main_idtf: [system](*<- lang_en;;*);
+						[система](*<- lang_ru;;*);;
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://system_definition_ru.html"
+					(*<- lang_ru;;*);										
+			*);;
+		*);	

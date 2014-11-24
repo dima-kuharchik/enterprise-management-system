@@ -1,0 +1,17 @@
+forecasting
+	=> nrel_main_idtf: [forecasting of a situation development](*<- lang_en;;*);
+			[прогнозирование развития ситуации](*<- lang_ru;;*);
+	=> nrel_idtf: [прогнозирование](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://forecasting_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<- rrel_problem: management;
+	=> nrel_used_term: object_of_management;; 

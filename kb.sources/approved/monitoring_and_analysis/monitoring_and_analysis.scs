@@ -1,0 +1,18 @@
+monitoring_and_analysis
+	=> nrel_main_idtf: [monitoring and analysis of current OS state](*<- lang_en;;*);
+						[мониторинг и анализ текущего состояния ОС](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://monitoring_and_analysis_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	=> nrel_used_term: organisational_system; 
+	<- rrel_function: planning;
+	-> rrel_problems: monitoring; analysis;;
+	
