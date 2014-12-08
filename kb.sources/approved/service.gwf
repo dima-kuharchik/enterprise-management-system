@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="61616184" parent="0" x="711.339" y="492.918" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[<b>Service</b> is an enterpreneurship, which is aimed at satisfaction of other persons, except the activity which is implemented on the base of labor relations.]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="63646808" parent="0" x="745.339" y="390.746" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[<b>Услуга</b> -  предпринимательская деятельность, направленная на удовлетворение потребностей других лиц, за исключением деятельности, осуществляемой на основе трудовых правоотношений.]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[<b>Г“Г±Г«ГіГЈГ </b> -  ГЇГ°ГҐГ¤ГЇГ°ГЁГ­ГЁГ¬Г ГІГҐГ«ГјГ±ГЄГ Гї Г¤ГҐГїГІГҐГ«ГјГ­Г®Г±ГІГј, Г­Г ГЇГ°Г ГўГ«ГҐГ­Г­Г Гї Г­Г  ГіГ¤Г®ГўГ«ГҐГІГўГ®Г°ГҐГ­ГЁГҐ ГЇГ®ГІГ°ГҐГЎГ­Г®Г±ГІГҐГ© Г¤Г°ГіГЈГЁГµ Г«ГЁГ¶, Г§Г  ГЁГ±ГЄГ«ГѕГ·ГҐГ­ГЁГҐГ¬ Г¤ГҐГїГІГҐГ«ГјГ­Г®Г±ГІГЁ, Г®Г±ГіГ№ГҐГ±ГІГўГ«ГїГҐГ¬Г®Г© Г­Г  Г®Г±Г­Г®ГўГҐ ГІГ°ГіГ¤Г®ГўГ»Гµ ГЇГ°Г ГўГ®Г®ГІГ­Г®ГёГҐГ­ГЁГ©.]]></content>
         </node>
         <node type="node/const/relation" idtf="nrel_inclusion" shapeColor="0" id="63641912" parent="0" left="0" top="0" right="88" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="209" y="502" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -23,7 +23,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="63648104" parent="0" x="101.088" y="235.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[услуга]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[ГіГ±Г«ГіГЈГ ]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="63647672" parent="0" x="101.088" y="280.5" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[service]]></content>

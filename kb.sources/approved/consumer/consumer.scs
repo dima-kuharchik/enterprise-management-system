@@ -8,7 +8,7 @@ consumer
 			(*
 				-> rrel_example:
 					"file://consumer_definition_ru.html"
-					(*<- lang_ru;;*);			
+					(*<- lang_ru;;*);;			
 			*);;
 		*);
 	<= nrel_inclusion:
@@ -26,7 +26,7 @@ consumer
 		intermediary_consumer
 		(*
 			=> nrel_main_idtf: [intermediary consumer](*<-lang_en;;*);
-					[потребитель-посредник]](*<- lang_ru;;*);;
+					[потребитель-посредник](*<- lang_ru;;*);;
 		*);
 		enterprise_consumer
 		(*

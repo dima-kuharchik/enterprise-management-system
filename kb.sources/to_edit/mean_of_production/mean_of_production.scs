@@ -8,7 +8,7 @@ mean_of_production
 			(*
 				-> rrel_example:
 					"file://mean_of_production_definition_ru.html"
-					(*<- lang_ru;;*);
+					(*<- lang_ru;;*);;
 			*);;
 		*);
 	<= nrel_inclusion: mean;

@@ -11,4 +11,5 @@ object_of_management
 					(*<- lang_ru;;*);;										
 			*);;
 		*);
+	<= nrel_inclusion: object;
 	=> nrel_used_term: organizational_system; process; management; system;;

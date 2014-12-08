@@ -13,10 +13,7 @@ organizing
 			(*
 				-> rrel_example:
 					"file://organizing_definition_ru.html"
-					(*<- lang_ru;;*);
-					"file://organizing_definition_en.html"
-					(*<- lang_en;;*);;
-					
+					(*<- lang_ru;;*);;					
 			*);;
 		*);	
 	<= nrel_inclusion: process;

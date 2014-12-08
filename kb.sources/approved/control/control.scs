@@ -21,7 +21,7 @@ control
 				(*
 					-> rrel_example:
 						"file://control_statement_ru.html"
-						(*<-lang_ru;;*);
+						(*<-lang_ru;;*);;
 				*);;
 		*);
 	<= nrel_inclusion: process;
