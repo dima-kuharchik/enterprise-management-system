@@ -1,0 +1,16 @@
+nrel_party_of_contract
+	=> nrel_main_idtf: [party of contract](*<- lang_en;;*);
+			[сторона договора](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_party_of_contract_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_used_term: contract;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;;

@@ -1,0 +1,21 @@
+nrel_customer
+	=> nrel_main_idtf: [customer](*<- lang_en;;*);
+			[заказчик](*<- lang_ru;;*);
+	=> nrel_idtf: [client](*<- lang_en;;*);
+			[purchaser](*<- lang_en;;*);
+			[buyer](*<- lang_en;;*);
+			[клиент](*<- lang_ru;;*);
+			[покупатель](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://customer_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: nrel_party_of_contract;
+	=> nrel_used_term: work_contract; contractor;;
+		

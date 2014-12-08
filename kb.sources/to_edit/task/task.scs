@@ -1,0 +1,16 @@
+task
+	=> nrel_main_idtf:[task](*<-lang_en;;*);
+			[задача](*<-lang_ru;;*);
+	=> nrel_idtf: [problem](*<- lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://task_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: goal;
+	=> nrel_used_term: goal;;

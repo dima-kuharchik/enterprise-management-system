@@ -1,0 +1,5 @@
+nrel_function
+	=> nrel_main_idtf: [function](*<- lang_en;;*);
+			[функция](*<- lang_ru;;*);
+	<- sc_node_norole_relation;
+    <- sc_type_norole_relation;; 
