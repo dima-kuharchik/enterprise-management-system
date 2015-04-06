@@ -1,37 +1,36 @@
-management => nrel_main_idtf:[management](*<-lang_en;;*);
-						[управление](*<-lang_ru;;*);
-		=>nrel_idtf: [management](*<- lang_en;;*);
-						[управленческая деятельность](*<- lang_ru;;*);
-		<- rrel_key_sc_element:...
-			(*
-				<- sc_definition;;
-				<= nrel_sc_text_translation:...
-					(*
-						-> rrel_example:
-							"file://management_definition_ru.html" 
-							(*<-lang_ru;;*);
-							"file://management_definition_en.html" 
-							(*<-lang_en;;*);;
-					*);;
-			*);
+management
+	=> nrel_main_idtf:[management](*<-lang_en;;*);
+			[управление](*<-lang_ru;;*);
+	=>nrel_idtf: 
+			[управленческая деятельность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://management_definition_ru.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);
 	<= nrel_inclusion: process;
 	<- rrel_key_sc_element:...
+		(*
+			<- sc_illustration
 			(*
-				<- sc_illustration
+				<- rrel_key_sc_element:...
 				(*
-					<- rrel_key_sc_element:...
+					<- sc_comment;;
+					<= nrel_sc_text_translation:...
 					(*
-						<- sc_comment;;
-						<= nrel_sc_text_translation:...
-						(*
-							-> rrel_example:[Комплекс задач управления, функции и фазы управленческой деятельности]
-									(*<- lang_ru;;*);;
-						*);;
+						-> rrel_example:[Комплекс задач управления, функции и фазы управленческой деятельности]
+								(*<- lang_ru;;*);;
 					*);;
 				*);;
-				<= nrel_sc_text_translation:...
-					(*
-						-> rrel_example:
-							"file://management_cycle.png";; 
-					*);;
 			*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://management_cycle.png";; 
+				*);;
+		*);;

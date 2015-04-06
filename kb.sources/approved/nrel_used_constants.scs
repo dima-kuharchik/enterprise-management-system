@@ -1,0 +1,17 @@
+nrel_used_constants
+	=> nrel_main_idtf: [used constants*](*<- lang_en;;*);
+			[используемые константы*](*<- lang_ru;;*);
+	<- quasybinary_relation;
+	<- binary_relation;
+	<- oriented_relation;
+	<- sc_node_norole_relation;
+	<- rrel_key_sc_element:...
+			(*
+				<- sc_definition;;
+				<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Используемые константы - константы (понятия), через которые определяется данное понятие.]
+						(*<- lang_ru;;*);;
+				*);;
+			*);;

@@ -1,0 +1,23 @@
+motive
+	=> nrel_main_idtf:[motive](*<-lang_en;;*);
+			[мотив](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://motive_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: reason;
+	<= nrel_used_constants:
+		{
+			action;
+			reason
+		};;
+		
+reason
+	=> nrel_main_idtf: [reason](*<- lang_en;;*);
+			[причина](*<- lang_ru;;*);;

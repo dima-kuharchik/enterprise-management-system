@@ -1,0 +1,16 @@
+rrel_function
+	=> nrel_main_idtf:[function'](*<-lang_en;;*);
+			[функция'](*<-lang_ru;;*);
+	=> nrel_idtf: [назначение'](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://rrel_function_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;

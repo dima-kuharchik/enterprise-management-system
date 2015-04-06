@@ -1,6 +1,0 @@
-rrel_function
-	=> nrel_main_idtf:[function](*<-lang_en;;*);
-			[функция](*<-lang_ru;;*);
-	=> nrel_idtf: [назначение](*<- lang_ru;;*);
-	<- sc_node_role_relation;
-	<- sc_type_role_relation;;

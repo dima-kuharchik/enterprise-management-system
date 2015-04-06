@@ -1,0 +1,17 @@
+income
+	=> nrel_main_idtf: [income](*<- lang_en;;*);
+			[доход](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://income_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			income
+		};;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="windows-1251"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
         <node type="node/const/general_node" idtf="format_html" shapeColor="0" id="63632440" parent="0" left="0" top="0" right="77" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="545" y="537" haveBus="false">
@@ -14,7 +14,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62742360" parent="0" x="523.246" y="400.246" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[<b>ѕоставщик</b> Ч это любое юридическое (организаци¤, предпри¤тие, учреждение) или физическое лицо, поставл¤ющие товары или услуги заказчикам.]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[<b>С•РѕСЃС‚Р°РІС‰РёРє</b> Р§ СЌС‚Рѕ Р»СЋР±РѕРµ СЋСЂРёРґРёС‡РµСЃРєРѕРµ (РѕСЂРіР°РЅРёР·Р°С†РёВ¤, РїСЂРµРґРїСЂРёВ¤С‚РёРµ, СѓС‡СЂРµР¶РґРµРЅРёРµ) РёР»Рё С„РёР·РёС‡РµСЃРєРѕРµ Р»РёС†Рѕ, РїРѕСЃС‚Р°РІР»В¤СЋС‰РёРµ С‚РѕРІР°СЂС‹ РёР»Рё СѓСЃР»СѓРіРё Р·Р°РєР°Р·С‡РёРєР°Рј.]]></content>
         </node>
         <node type="node/const/group" idtf="sc_definition" shapeColor="0" id="62741928" parent="0" left="0" top="0" right="80" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="173.5" y="292" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -56,7 +56,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62742648" parent="0" x="1109.9" y="1041" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[государственный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62740776" parent="0" x="1106.9" y="994" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[municipal provider]]></content>
@@ -65,19 +65,19 @@
             <content type="1" mime_type="content/term" file_name=""><![CDATA[supplier of other form of supply]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62740632" parent="0" x="1109.9" y="764" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[кооперативный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РєРѕРѕРїРµСЂР°С‚РёРІРЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62738904" parent="0" x="1108.9" y="806" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[cooperative supplier]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62742072" parent="0" x="1106.9" y="860" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[частный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[С‡Р°СЃС‚РЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62740344" parent="0" x="1106.9" y="903" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[private supplier]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62740920" parent="0" x="1107.9" y="954" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[муниципальный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РјСѓРЅРёС†РёРїР°Р»СЊРЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62739192" parent="0" x="1108.9" y="1083" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[state supplier]]></content>
@@ -89,7 +89,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62741496" parent="0" x="1110.9" y="644" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[поставщик иной формы поставки]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РїРѕСЃС‚Р°РІС‰РёРє РёРЅРѕР№ С„РѕСЂРјС‹ РїРѕСЃС‚Р°РІРєРё]]></content>
         </node>
         <node type="node/const/group" idtf="lang_en" shapeColor="0" id="62746680" parent="0" left="0" top="0" right="53" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="334.119" y="617.53" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -119,13 +119,13 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62745096" parent="0" x="1010.9" y="1503.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[республиканский поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[СЂРµСЃРїСѓР±Р»РёРєР°РЅСЃРєРёР№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62744376" parent="0" x="1012.9" y="1313.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[внутриобластной поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РІРЅСѓС‚СЂРёРѕР±Р»Р°СЃС‚РЅРѕР№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62744232" parent="0" x="1012.9" y="1582.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[внереспубликанский поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РІРЅРµСЂРµСЃРїСѓР±Р»РёРєР°РЅСЃРєРёР№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="62744952" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="897.5" y="835.5" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -140,7 +140,7 @@
             <content type="1" mime_type="content/term" file_name=""><![CDATA[extrasystemic supplier]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62745528" parent="0" x="76" y="1353" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[внесистемный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РІРЅРµСЃРёСЃС‚РµРјРЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="62744088" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-65.5" y="1297.5" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -155,13 +155,13 @@
             <content type="1" mime_type="content/term" file_name=""><![CDATA[By property form:]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62743944" parent="0" x="64" y="1005" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[По форме собственности:]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РџРѕ С„РѕСЂРјРµ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚Рё:]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="62746248" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="43.5" y="723.5" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62745240" parent="0" x="103" y="786" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[По территориальному признаку:]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РџРѕ С‚РµСЂСЂРёС‚РѕСЂРёР°Р»СЊРЅРѕРјСѓ РїСЂРёР·РЅР°РєСѓ:]]></content>
         </node>
         <node type="node/const/relation" idtf="nrel_main_idtf" shapeColor="0" id="62146952" parent="0" left="0" top="0" right="93" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="184.5" y="666.5" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -194,7 +194,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62148104" parent="0" x="648" y="878" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[По функции:]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РџРѕ С„СѓРЅРєС†РёРё:]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62147960" parent="0" x="617" y="906" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[By function:]]></content>
@@ -209,7 +209,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62145656" parent="0" x="554" y="1302" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[поставщик-посредник]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РїРѕСЃС‚Р°РІС‰РёРє-РїРѕСЃСЂРµРґРЅРёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62147528" parent="0" x="552" y="1349" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[intermediary supplier]]></content>
@@ -218,19 +218,19 @@
             <content type="1" mime_type="content/term" file_name=""><![CDATA[supplier-manufacturer]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62147240" parent="0" x="76" y="1257" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[внутрисистемный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РІРЅСѓС‚СЂРёСЃРёСЃС‚РµРјРЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62144936" parent="0" x="1013.9" y="1216.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[местный поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РјРµСЃС‚РЅС‹Р№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62147096" parent="0" x="554" y="1206" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[поставщик-производитель]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РїРѕСЃС‚Р°РІС‰РёРє-РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ]]></content>
         </node>
         <node type="node/const/asymmetry" idtf="" shapeColor="0" id="62144792" parent="0" x="594.5" y="967" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62146520" parent="0" x="664" y="1006" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[По ведомственной принадлежности]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РџРѕ РІРµРґРѕРјСЃС‚РІРµРЅРЅРѕР№ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё]]></content>
         </node>
         <node type="node/const/group" idtf="lang_ru" shapeColor="0" id="62147384" parent="0" left="0" top="0" right="52" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="412.5" y="1246.5" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -281,7 +281,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="62143352" parent="0" x="1009.9" y="1409.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[внеобластной поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РІРЅРµРѕР±Р»Р°СЃС‚РЅРѕР№ РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/relation" idtf="nrel_local_supplier" shapeColor="0" id="62140760" parent="0" left="0" top="0" right="117" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1198.5" y="1223" haveBus="false">
             <content type="0" mime_type="" file_name=""/>
@@ -338,7 +338,7 @@
             <content type="0" mime_type="" file_name=""/>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="59327600" parent="0" x="1174.04" y="306.5" haveBus="false">
-            <content type="1" mime_type="content/term" file_name=""><![CDATA[поставщик]]></content>
+            <content type="1" mime_type="content/term" file_name=""><![CDATA[РїРѕСЃС‚Р°РІС‰РёРє]]></content>
         </node>
         <node type="node/const/general_node" idtf="" shapeColor="0" id="59329760" parent="0" x="1174.04" y="367.5" haveBus="false">
             <content type="1" mime_type="content/term" file_name=""><![CDATA[supplier]]></content>

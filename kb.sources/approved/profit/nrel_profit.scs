@@ -1,0 +1,22 @@
+nrel_profit
+	=> nrel_main_idtf:[profit*](*<-lang_en;;*);
+			[прибыль*](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_profit_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			goods;
+			service;
+			income;
+			production;
+			factor_of_production
+		};;
+	

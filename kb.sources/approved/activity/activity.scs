@@ -34,10 +34,45 @@ activity
 					"file://activity_components.png";;
 			*);;
 		*);	
-	-> need;
-	-> motive;
-	-> goal;
-	-> problem;
-	-> technology;
-	-> action;
-	-> result;;
+	-> rrel_1: motive;
+	-> rrel_2: goal;
+	-> rrel_3: task;
+	-> rrel_4: technology;
+	-> rrel_5: action;
+	-> rrel_6: result;;
+	
+rrel_1
+	=> nrel_main_idtf: [1](*<- lang_en;;*);
+			[1](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;
+	
+rrel_2
+	=> nrel_main_idtf: [2](*<- lang_en;;*);
+			[2](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;
+	
+rrel_3
+	=> nrel_main_idtf: [3](*<- lang_en;;*);
+			[3](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;
+	
+rrel_4
+	=> nrel_main_idtf: [4](*<- lang_en;;*);
+			[4](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;
+	
+rrel_5
+	=> nrel_main_idtf: [5](*<- lang_en;;*);
+			[5](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;
+	
+rrel_6
+	=> nrel_main_idtf: [6](*<- lang_en;;*);
+			[6](*<- lang_ru;;*);
+	<- sc_node_role_relation;
+	<- sc_type_role_relation;;

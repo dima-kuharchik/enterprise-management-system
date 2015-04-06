@@ -1,0 +1,19 @@
+exchange
+	=> nrel_main_idtf: [exchange](*<- lang_en;;*);
+			[обмен](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://exchange_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<= nrel_used_constants:
+		{
+			process;
+			product
+		};;

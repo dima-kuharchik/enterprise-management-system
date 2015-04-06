@@ -1,0 +1,19 @@
+requirement
+	=> nrel_main_idtf: [requirement](*<- lang_en;;*);
+			[требование](*<- lang_ru;;*);
+	=> nrel_idtf: [норма](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://requirement_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: provision;
+	<= nrel_used_constants:
+		{
+			provision
+		};;

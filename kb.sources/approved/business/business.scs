@@ -1,0 +1,20 @@
+business
+	=> nrel_main_idtf: [business](*<- lang_en;;*);
+			[бизнес](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: activity;
+	<= nrel_used_constants:
+		{
+			activity;
+			profit;
+			product
+		};;

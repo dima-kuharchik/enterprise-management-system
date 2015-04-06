@@ -1,0 +1,29 @@
+nrel_qualification
+	=> nrel_main_idtf:[qualification*](*<-lang_en;;*);
+		[квалификация*](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://qualification_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://qualification_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: nrel_job_qualification; nrel_employee_qualification;
+	<= nrel_inclusion: quality;
+	=> nrel_used_constants:
+		{
+			job
+		};;

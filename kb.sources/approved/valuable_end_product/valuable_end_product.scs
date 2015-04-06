@@ -1,0 +1,22 @@
+valuable_end_product
+	=> nrel_main_idtf: [valuable end product](*<- lang_en;;*);
+			[ценный конечный продукт](*<- lang_ru;;*);
+	=> nrel_idtf: [ЦКП](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://valuable_end_product_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: product;
+	<= nrel_used_constants:
+		{
+			product;
+			exchange;
+			nrel_consumer;
+			nrel_manufacturer
+		};;

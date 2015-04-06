@@ -1,6 +1,6 @@
 action
-	=> nrel_main_idtf:[motive](*<-lang_en;;*);
-			[мотив](*<-lang_ru;;*);
+	=> nrel_main_idtf:[action](*<-lang_en;;*);
+			[действие](*<-lang_ru;;*);
 	<- rrel_key_sc_element:...
 		(*
 			<- sc_definition;;
@@ -11,5 +11,9 @@ action
 					(*<- lang_ru;;*);;
 			*);;
 		*);;
-	=> nrel_used_term: activity; goal;;
+	<= nrel_used_constants:
+		{
+			activity;
+			goal
+		};;
 	

@@ -1,0 +1,19 @@
+automation
+	=> nrel_main_idtf:[automation](*<-lang_en;;*);
+		[автоматизация](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://automation_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: production_automation; complex_automation_manufacturing;
+	<= nrel_inclusion: process;
+	=> nrel_used_constants:
+		{
+			process
+		};;

@@ -1,0 +1,25 @@
+stimulation
+	=> nrel_main_idtf: [stimulation](*<- lang_en;;*);
+			[стимулирование](*<- lang_ru;;*);
+	=> nrel_idtf: [motivation](*<- lang_en;;*);
+			[мотивация](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://stimulation_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);	
+	<= nrel_inclusion: process;
+	<- rrel_function: management;
+	=> nrel_used_constants:
+		{
+			process;
+			organizational_system;
+			delegation;
+			duty;
+			plan
+		};;

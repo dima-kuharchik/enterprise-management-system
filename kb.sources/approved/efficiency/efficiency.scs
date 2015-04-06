@@ -1,0 +1,18 @@
+efficiency
+	=> nrel_main_idtf:[efficiency](*<-lang_en;;*);
+			[эффективность](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://efficiency_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			result;
+			resource
+		};;

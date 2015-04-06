@@ -1,0 +1,27 @@
+mean_of_production
+	=> nrel_main_idtf: [mean of production](*<- lang_en;;*);
+						[средство производства](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://mean_of_production_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: mean;
+	=> nrel_used_constants:
+		{
+			process;
+			material_good;
+			service;
+			mean_of_labor;
+			object_of_labor;
+			production
+		};;
+		
+material_good
+	=> nrel_main_idtf: [material good](*<- lang_en;;*);
+			[материальный товар](*<- lang_ru;;*);;

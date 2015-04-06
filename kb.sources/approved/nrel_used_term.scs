@@ -1,13 +1,13 @@
 nrel_used_term
-	=> nrel_main_idtf: [used term](*<- lang_en;;*);
-						[используемое понятие](*<- lang_ru;;*);
+	=> nrel_main_idtf: [used term*](*<- lang_en;;*);
+						[используемое понятие*](*<- lang_ru;;*);
 	<- rrel_key_sc_element:...
 			(*
 				<- sc_definition;;
 				<= nrel_sc_text_translation:...
 				(*
 					-> rrel_example:
-						[Используемое понятия - понятие, через которое определяется данное.]
+						[Используемое понятие - понятие, через которое определяется данное.]
 						(*<- lang_ru;;*);;
 				*);;
 			*);

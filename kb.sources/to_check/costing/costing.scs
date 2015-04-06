@@ -1,0 +1,31 @@
+costing
+	=> nrel_main_idtf:[costing](*<-lang_en;;*);
+		[калькулирование](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://costing_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://costing_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: determination;
+	=> nrel_used_constants:
+		{
+			determination;
+			cost;
+			product;
+			service
+		};;

@@ -1,0 +1,25 @@
+project
+	=> nrel_main_idtf: [project](*<- lang_en;;*);
+			[проект](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://project_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			system;
+			result;
+			quality;
+			resource;
+			organizational_property
+		};;
+		
+quality
+	=> nrel_main_idtf: [quality](*<- lang_en;;*);
+			[качество](*<- lang_ru;;*);;

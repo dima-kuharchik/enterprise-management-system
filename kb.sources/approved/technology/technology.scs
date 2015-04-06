@@ -1,0 +1,44 @@
+technology
+	=> nrel_main_idtf:[technology](*<-lang_en;;*);
+			[технология](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://technology_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: system;
+	=> nrel_used_constants:
+		{
+			system;
+			condition;
+			form;
+			method;
+			mean;
+			criterion;
+			task
+		};;
+		
+condition
+	=> nrel_main_idtf: [condition](*<- lang_en;;*);
+			[условие](*<- lang_ru;;*);;
+			
+form
+	=> nrel_main_idtf: [form](*<- lang_en;;*);
+			[форма](*<- lang_ru;;*);;
+			
+method
+	=> nrel_main_idtf: [method](*<- lang_en;;*);
+			[метод](*<- lang_ru;;*);;
+			
+criterion
+	=> nrel_main_idtf: [criterion](*<- lang_en;;*);
+			[критерий](*<- lang_ru;;*);;
+			
+mean
+	=> nrel_main_idtf: [mean](*<- lang_en;;*);
+			[средство](*<- lang_ru;;*);;

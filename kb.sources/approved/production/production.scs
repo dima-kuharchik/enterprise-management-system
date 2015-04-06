@@ -12,4 +12,10 @@ production
 			*);;
 		*);
 	<= nrel_inclusion: process;
-	=> nrel_used_term: process; resource; product; mean_of_labor;;
+	=> nrel_used_constants:
+		{
+			process;
+			resource;
+			product;
+			mean_of_labor
+		};;

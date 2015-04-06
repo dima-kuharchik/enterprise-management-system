@@ -1,0 +1,19 @@
+validation
+	=> nrel_main_idtf:[validation](*<-lang_en;;*);
+		[валидация](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://validation_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: confirmation;
+	=> nrel_used_constants:
+		{
+			confirmation;
+			requirement
+		};;

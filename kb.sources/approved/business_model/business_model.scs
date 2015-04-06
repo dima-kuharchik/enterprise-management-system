@@ -1,0 +1,55 @@
+business_model
+	=> nrel_main_idtf: [business model](*<- lang_en;;*);
+			[бизнес-модель](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_model_definition1_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_model_definition2_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_model_statement1_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_model_statement2_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			business;
+			company;
+			profit;
+			income
+		};
+	<= nrel_inclusion: model;;
+	
+model
+	=> nrel_main_idtf: [model](*<- lang_en;;*);
+			[модель](*<- lang_ru;;*);;

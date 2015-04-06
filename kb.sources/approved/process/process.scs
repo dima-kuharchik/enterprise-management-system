@@ -1,0 +1,13 @@
+process
+	=> nrel_main_idtf: [process](*<- lang_en;;*);
+			[процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://process_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);;

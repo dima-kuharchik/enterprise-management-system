@@ -1,0 +1,70 @@
+business_process
+	=> nrel_main_idtf: [business process](*<- lang_en;;*);
+			[бизнес-процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://business_process_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<= nrel_used_constants:
+		{
+			process;
+			result;
+			product;
+			consumer
+		};
+	=> nrel_inclusion: main_process; auxiliary_process; management_process; social_process;;
+
+main_process
+	=> nrel_main_idtf: [main process](*<- lang_en;;*);
+			[основной процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://main_process_statement_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);;
+			
+auxiliary_process
+	=> nrel_main_idtf: [auxiliary process](*<- lang_en;;*);
+			[вспомогательный процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://auxiliary_process_statement_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);;
+			
+management_process
+	=> nrel_main_idtf: [management process](*<- lang_en;;*);
+			[процесс менеджмента](*<- lang_ru;;*);
+	=> nrel_idtf: [процесс управления](*<- lang_ru;;*);;
+
+social_process
+	=> nrel_main_idtf: [social process](*<- lang_en;;*);
+			[социальный процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[Социальные процессы имеют место, когда в компании функционируют объекты социальной инфраструктуры, например, столовые, базы отдыха, поликлиники и т.п. В таком случае эти процессы включаются в общую систему управления компании.]
+					(*<- lang_ru;;*);;										
+			*);;
+		*);;
+			
+	

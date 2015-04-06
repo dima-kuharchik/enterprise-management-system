@@ -1,0 +1,21 @@
+operation
+	=> nrel_main_idtf: [operation](*<- lang_en;;*);
+			[операция](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://operation_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<= nrel_inclusion: activity;
+	<= nrel_used_constants:
+		{
+			process;
+			result;
+			product;
+			nrel_consumer
+		};;

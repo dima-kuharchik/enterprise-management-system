@@ -12,7 +12,10 @@ monitoring_and_analysis
 			*);;
 		*);
 	<= nrel_inclusion: process;
-	=> nrel_used_term: organisational_system; 
+	=> nrel_used_constants:
+		{
+			organisational_system
+		}; 
 	<- rrel_function: planning;
-	-> rrel_problems: monitoring; analysis;;
+	-> rrel_function: monitoring; analysis;;
 	

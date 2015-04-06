@@ -26,4 +26,4 @@ control
 		*);
 	<= nrel_inclusion: process;
 	<- rrel_function: management;
-	=> nrel_used_term: process;;
+	=> nrel_used_constants:{process};;

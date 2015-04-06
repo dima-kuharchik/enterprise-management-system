@@ -1,0 +1,39 @@
+indicator
+	=> nrel_main_idtf: [indicator](*<- lang_en;;*);
+			[показатель](*<- lang_ru;;*);
+	=> nrel_idtf: [index](*<- lang_en;;*);
+			[показатель деятельности](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://indicator_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);	
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://indicator_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: characteristic;;
+	
+characteristic
+	=> nrel_main_idtf: [characteristic](*<- lang_en;;*);
+			[характеристика](*<- lang_ru;;*);
+	=> nrel_inclusion: quality_characteristic; quantity_characteristic;;
+	
+quality_characteristic
+	=> nrel_main_idtf: [quality characteristic](*<- lang_en;;*);
+			[качественная характеристика](*<- lang_ru;;*);;
+
+quantity_characteristic
+	=> nrel_main_idtf: [quantity characteristic](*<- lang_en;;*);
+			[количественная характеристика](*<- lang_ru;;*);;

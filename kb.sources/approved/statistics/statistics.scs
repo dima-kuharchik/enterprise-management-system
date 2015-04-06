@@ -1,0 +1,25 @@
+statistics
+	=> nrel_main_idtf: [statistics](*<- lang_en;;*);
+			[статистика](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://statistics_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);	
+	<= nrel_inclusion: visualization;
+	=> nrel_used_constants:
+		{
+			activity;
+			process;
+			product;
+			visualization
+		};;
+	
+visualization
+	=> nrel_main_idtf: [visualization](*<- lang_en;;*);
+			[визуализация](*<- lang_ru;;*);;

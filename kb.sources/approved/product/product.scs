@@ -2,18 +2,19 @@ product
 	=> nrel_main_idtf:[product](*<-lang_en;;*);
 							[продукт](*<-lang_ru;;*);
 	=> nrel_idtf: [продукция](*<- lang_ru;;*);
-			[продукт труда](*<- lang_ru;;*);
 	<- rrel_key_sc_element:...
 		(*
 			<- sc_definition;;
 			<= nrel_sc_text_translation:...
 			(*
 				-> rrel_example:
-					"file://product_definition_ru.html"
-					(*<- lang_ru;;*);
-					"file://product_definition_en.html"
-					(*<- lang_en;;*);;
+					"file://product_definiton_ru.html"
+					(*<- lang_ru;;*);;
 			*);;
 		*);
+	<= nrel_inclusion: result;
 	=> nrel_inclusion: product_of_labor;
-	=> nrel_used_term: labor_activity;;
+	=> nrel_used_constants:
+		{
+			process
+		};;

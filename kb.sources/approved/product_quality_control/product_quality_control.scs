@@ -1,0 +1,20 @@
+product_quality_control
+	=> nrel_main_idtf: [product quality control](*<- lang_en;;*);
+			[управление качеством продукции](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://product_quality_control_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: activity;
+	<= nrel_used_constants:
+		{
+			activity;
+			quality;
+			requirement
+		};;

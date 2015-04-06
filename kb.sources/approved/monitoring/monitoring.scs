@@ -1,0 +1,21 @@
+monitoring
+	=> nrel_main_idtf: [monitoring](*<- lang_en;;*);
+			[мониторинг](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://monitoring_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_function: monitoring_and_analysis;
+	<= nrel_inclusion: activity;
+	<= nrel_used_constants:
+		{
+			object;
+			process;
+			indicator
+		};;

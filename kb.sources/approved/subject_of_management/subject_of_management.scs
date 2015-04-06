@@ -1,0 +1,15 @@
+subject_of_management
+	=> nrel_main_idtf: [subject of management](*<- lang_en;;*);
+			[субъект управления](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://subject_of_management_definition_ru.html"
+					(*<- lang_ru;;*);;										
+			*);;
+		*);
+	<= nrel_inclusion: subject;
+	=> nrel_used_term: organizational_system; goal;;

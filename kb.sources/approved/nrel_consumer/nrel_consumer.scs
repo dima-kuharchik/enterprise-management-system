@@ -1,0 +1,58 @@
+nrel_consumer
+	=> nrel_main_idtf: [consumer*](*<- lang_en;;*);
+			[потребитель*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_consumer_definition_ru.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		nrel_individual_consumer
+		(*
+			=> nrel_main_idtf: [individual consumer*](*<-lang_en;;*);
+					[индивидуальный потребитель*](*<- lang_ru;;*);;
+			<- sc_type_norole_relation;;
+			<- sc_node_norole_relation;;
+		*);
+		nrel_household_consumer
+		(*
+			=> nrel_main_idtf: [household consumer*](*<- lang_en;;*);
+					[домашнее хозяйство-потребитель*](*<- lang_ru;;*);;
+			-> nrel_idtf: [семья-потребитель*]	(*<- lang_ru;;*);;	
+			<- sc_type_norole_relation;;
+			<- sc_node_norole_relation;;
+		*);
+		nrel_intermediary_consumer
+		(*
+			=> nrel_main_idtf: [intermediary consumer*](*<-lang_en;;*);
+					[потребитель-посредник*](*<- lang_ru;;*);;
+			<- sc_type_norole_relation;;
+			<- sc_node_norole_relation;;
+		*);
+		nrel_enterprise_consumer
+		(*
+			=> nrel_main_idtf: [enterprise consumer*](*<-lang_en;;*);
+					[предприятие-потребитель*](*<- lang_ru;;*);;
+			<- sc_type_norole_relation;;
+			<- sc_node_norole_relation;;
+		*);
+		nrel_official_consumer
+		(*
+			=> nrel_main_idtf: [official consumer*](*<-lang_en;;*);
+					[должностное лицо-потребитель*](*<- lang_ru;;*);;
+			<- sc_type_norole_relation;;
+			<- sc_node_norole_relation;;
+		*);
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<= nrel_used_constants:
+		{
+			goods;
+			service
+		};;
+		

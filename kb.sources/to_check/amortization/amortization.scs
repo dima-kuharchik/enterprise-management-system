@@ -1,0 +1,22 @@
+amortization
+	=> nrel_main_idtf:[amortization](*<-lang_en;;*);
+		[амортизация](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[depreciation](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://amortization_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	=> nrel_used_constants:
+		{
+			process;
+			mean_of_production;
+			product
+		};;

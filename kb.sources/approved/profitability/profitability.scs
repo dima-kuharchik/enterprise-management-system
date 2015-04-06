@@ -1,0 +1,24 @@
+profitability
+	=> nrel_main_idtf: [profitability](*<- lang_en;;*);
+			[рентабельность](*<- lang_ru;;*);
+	-> nrel_idtf: [выгодность](*<- lang_ru;;*);
+			[доходность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://profitability_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: indicator;
+	<= nrel_used_constants:
+		{
+			indicator;
+			efficiency;
+			activity;
+			mean;
+			enterprise
+		};;
