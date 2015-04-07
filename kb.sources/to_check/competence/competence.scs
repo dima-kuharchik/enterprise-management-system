@@ -1,0 +1,25 @@
+competence
+	=> nrel_main_idtf:[competence](*<-lang_en;;*);
+		[компетентность](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[authority](*<-lang_en;;*);
+		[jurisdiction](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://competence_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: proxy;
+	=> nrel_used_constants:
+		{
+			right;
+			duty;
+			state_agency;
+			official;
+			non_governmental_organization
+		};;

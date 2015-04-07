@@ -1,0 +1,20 @@
+logistics
+	=> nrel_main_idtf:[logistics](*<-lang_en;;*);
+		[логистика](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistics_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: business_logistics; transport_logistics;  retail_logistics; procurement_logistics; distribution_logistics; customs_logistics; warehouse_logistics; information_logistics;
+	<= nrel_inclusion: management;
+	=> nrel_used_constants:
+		{
+			management;
+			saves_promotion
+		};;
