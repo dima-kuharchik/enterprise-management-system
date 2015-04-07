@@ -9,21 +9,7 @@ records_management
 			<= nrel_sc_text_translation:...
 			(*
 				-> rrel_example:
-					"file://records_management_definition_en.html"
-					(*<- lang_en;;*);;
 					"file://records_management_definition_ru.html"
-					(*<- lang_ru;;*);;
-			*);;
-		*);
-	<- rrel_key_sc_element:...
-		(*
-			<- sc_statement;;
-			<= nrel_sc_text_translation:...
-			(*
-				-> rrel_example:
-					"file://records_management_statement_en.html"
-					(*<- lang_en;;*);;
-					"file://records_management_statement_ru.html"
 					(*<- lang_ru;;*);;
 			*);;
 		*);

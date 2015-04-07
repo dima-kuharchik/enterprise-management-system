@@ -7,7 +7,7 @@ nrel_qualification
 			<= nrel_sc_text_translation:...
 			(*
 				-> rrel_example:
-					"file://qualification_definition_ru.html"
+					"file://nrel_qualification_definition_ru.html"
 					(*<- lang_ru;;*);;
 			*);;
 		*);
@@ -17,7 +17,7 @@ nrel_qualification
 			<= nrel_sc_text_translation:...
 			(*
 				-> rrel_example:
-					"file://qualification_statement_ru.html"
+					"file://nrel_qualification_statement_ru.html"
 					(*<- lang_ru;;*);;
 			*);;
 		*);
