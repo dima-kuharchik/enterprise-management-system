@@ -1,0 +1,30 @@
+logistic_operation
+	=> nrel_main_idtf:[logistic_operation](*<-lang_en;;*);
+		[логистическая операция](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistic_operation_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistic_operation_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: operation;
+	=> nrel_using_constants:
+		{
+			action;
+			material_flow;
+			information_flow
+		};;

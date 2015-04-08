@@ -1,0 +1,25 @@
+material_resource
+	=> nrel_main_idtf:[material resource](*<-lang_en;;*);
+		[материальный ресурс](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://material_resource_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: resource;
+	=> nrel_using_constants:
+		{
+			object_of_labor;
+			subject_matter_of_labor;
+			process;
+			mean_of_labor;
+			need;
+			production;
+			raw_material;
+			material
+		};;

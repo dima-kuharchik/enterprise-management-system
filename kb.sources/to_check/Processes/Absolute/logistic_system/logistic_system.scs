@@ -1,0 +1,20 @@
+logistic_system
+	=> nrel_main_idtf:[logistic system](*<-lang_en;;*);
+		[логистическая система](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistic_system_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: system;
+	=> nrel_using_constants:
+		{
+			logistic_chain;
+			nrel_problem;
+			logistics
+		};;

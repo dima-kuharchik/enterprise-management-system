@@ -1,0 +1,25 @@
+work_in_progress
+	=> nrel_main_idtf:[work in progress](*<-lang_en;;*);
+		[незавершенное производство](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[WIP](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://work_in_progress_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: product;
+	=> nrel_using_constants:
+		{
+			product;
+			technology;
+			production_cycle;
+			nrel_customer;
+			market;
+			end_product_warehouse
+		};;

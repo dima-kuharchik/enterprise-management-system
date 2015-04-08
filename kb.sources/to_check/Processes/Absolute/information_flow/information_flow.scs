@@ -1,0 +1,31 @@
+information_flow
+	=> nrel_main_idtf:[information flow](*<-lang_en;;*);
+		[информационный поток](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://information_flow_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://information_flow_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: flow;
+	=> nrel_using_constants:
+		{
+			logistic_system;
+			management;
+			control;
+			logistic_operation
+		};;

@@ -1,0 +1,25 @@
+logistic_chain
+	=> nrel_main_idtf:[logistic chain](*<-lang_en;;*);
+		[логистическая цепь](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[логистический канал](*<-lang_ru;;*);
+		[ цепь поставок](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistic_chain_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: partially_ordered_set;
+	=> nrel_using_constants:
+		{
+			intermediary;
+			partially_ordered_set;
+			material_flow;
+			industrial_enterprise;
+			nrel_consumer
+		};;

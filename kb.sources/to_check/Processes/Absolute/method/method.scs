@@ -1,0 +1,20 @@
+method
+	=> nrel_main_idtf:[method](*<-lang_en;;*);
+		[метод](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://method_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_using_constants:
+		{
+			systematization;
+			action;
+			problem;
+			goal
+		};;

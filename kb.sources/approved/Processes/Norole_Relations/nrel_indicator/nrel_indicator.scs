@@ -1,4 +1,7 @@
 nrel_indicator
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
 	=> nrel_main_idtf: [indicator*](*<- lang_en;;*);
 			[показатель*](*<- lang_ru;;*);
 	=> nrel_idtf: [index*](*<- lang_en;;*);
@@ -23,25 +26,26 @@ nrel_indicator
 					(*<- lang_ru;;*);;
 			*);;
 		*);
-	<- sc_node_norole_relation;
-	<- sc_type_norole_relation;
 	<= nrel_inclusion: nrel_characteristic;;
 	
 nrel_characteristic
 	=> nrel_main_idtf: [characteristic*](*<- lang_en;;*);
 			[характеристика*](*<- lang_ru;;*);
 	=> nrel_inclusion: nrel_quality_characteristic; nrel_quantity_characteristic;
-	<- sc_node_norole_relation;
 	<- sc_type_norole_relation;;
+	<- sc_node_norole_relation;;
+	<- binary_relation;;
 	
 nrel_quality_characteristic
 	=> nrel_main_idtf: [quality characteristic*](*<- lang_en;;*);
 			[качественная характеристика*](*<- lang_ru;;*);
-	<- sc_node_norole_relation;
 	<- sc_type_norole_relation;;
+	<- sc_node_norole_relation;;
+	<- binary_relation;;
 	
 nrel_quantity_characteristic
 	=> nrel_main_idtf: [quantity characteristic*](*<- lang_en;;*);
 			[количественная характеристика*](*<- lang_ru;;*);
-	<- sc_node_norole_relation;
 	<- sc_type_norole_relation;;
+	<- sc_node_norole_relation;;
+	<- binary_relation;;

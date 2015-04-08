@@ -1,0 +1,28 @@
+end_product
+	=> nrel_main_idtf:[end_product](*<-lang_en;;*);
+		[готовый продукт](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[готовая продукция](*<-lang_ru;;*);
+		[ продукция предприятия](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://end_product_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: product;
+	=> nrel_using_constants:
+		{
+			product;
+			production_cycle;
+			enterprise;
+			standart;
+			requirement;
+			technical_specification;
+			technical_control_department;
+			end_product_warehouse
+		};;

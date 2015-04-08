@@ -1,0 +1,31 @@
+material_flow
+	=> nrel_main_idtf:[material_flow](*<-lang_en;;*);
+		[материальный поток](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://material_flow_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://material_flow_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: material_resource; work_in_progress; end_product;
+	=> nrel_using_constants:
+		{
+			material_resource;
+			work_in_progress;
+			end_product;
+			logistic_operation
+		};;
