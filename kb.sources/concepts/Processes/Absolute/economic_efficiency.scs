@@ -1,0 +1,23 @@
+economic_efficiency
+	=> nrel_main_idtf:[economic efficiency](*<-lang_en;;*);
+			[экономическая эффективность](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Экономическая эффективность</b> - результат производственной деятельности, выражаемый в виде соотношения между итогами хозяйственной деятельности и затратами ресурсов.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: efficiency;
+	<= nrel_using_constants:
+		{
+			result;
+			production;
+			resource
+		};;

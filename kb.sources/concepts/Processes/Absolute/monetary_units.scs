@@ -1,0 +1,48 @@
+monetary_unit
+	=> nrel_main_idtf:
+		[monetary unit](*<- lang_en;;*);
+		[денежная единица](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Денежная единица</b> - единица денежного измерения.]  
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_subdividing:
+		{
+			euro;
+			usa_dollar;
+			bel_ruble
+		};
+	=> nrel_using_constants:
+		{
+			units_of_measure
+		};;
+		
+euro
+	=> nrel_main_idtf:
+		[Euro](*<- lang_en;;*);
+		[Евро](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[€];;
+		
+usa_dollar
+	=> nrel_main_idtf:
+		[United States dollar](*<- lang_en;;*);
+		[Доллар США](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[$];;
+		
+bel_ruble
+	=> nrel_main_idtf:
+		[Belarusian ruble](*<- lang_en;;*);
+		[Белорусский рубль](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[BYR];;

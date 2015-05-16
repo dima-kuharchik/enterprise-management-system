@@ -1,0 +1,39 @@
+employee
+	=> nrel_main_idtf:
+		[employee](*<-lang_en;;*);
+		[работник](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[служащий](*<-lang_ru;;*);
+		[работающий по найму](*<- lang_ru;;*);
+		[сотрудник](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Работник</b> -  лицо, работающее по трудовому договору и подчиняющееся внутреннему трудовому распорядку организации.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);
+	<= nrel_inclusion: person;
+	<= nrel_using_constants: 
+		{
+			work;
+			employment_contract;
+			internal_work_schedule;
+			organizational_system
+		};;
+
+working_age_population
+	=> nrel_main_idtf:
+		[working-age population](*<-lang_en;;*);
+		[трудоспособное население](*<-lang_ru;;*);;
+
+work
+	=> nrel_main_idtf:
+		[work](*<-lang_en;;*);
+		[работа](*<-lang_ru;;*);;

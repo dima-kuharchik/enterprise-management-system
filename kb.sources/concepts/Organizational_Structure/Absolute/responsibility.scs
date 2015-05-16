@@ -1,0 +1,50 @@
+responsibility
+	=> nrel_main_idtf:[responsibility](*<-lang_en;;*);
+			[ответственность](*<-lang_ru;;*);
+	
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Ответственность</b> -  обязанность и готовность субъекта отвечать за совершенные действия, поступки и их последствия.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);
+    
+	<= nrel_inclusion: 
+		legal_responsibility(*
+					=> nrel_main_idtf: 
+							[legal responsibility](*<-lang_en;;*);
+							[юридическая ответственность](*<- lang_ru;;*);;
+				*);
+		constitutional_responsibility(*
+					=> nrel_main_idtf:
+							[constitutional responsibility](*<-lang_en;;*);
+							[конституционная ответственность](*<- lang_ru;;*);;
+				*);
+		international_legal_responsibility(*
+					=> nrel_main_idtf: 
+							[international legal responsibility](*<-lang_en;;*);
+							[международно-правовая ответственность](*<- lang_ru;;*);;
+				*);
+	<= nrel_using_constants:
+		{
+			offense;
+			subject_of_law
+		};;
+				
+				
+offense
+	=> nrel_main_idtf:
+		[offense](*<-lang_en;;*);
+		[правонарушение](*<-lang_ru;;*);;
+		
+subject_of_law
+	=> nrel_main_idtf:
+		[subject of law ](*<-lang_en;;*);
+		[субъект права](*<-lang_ru;;*);;

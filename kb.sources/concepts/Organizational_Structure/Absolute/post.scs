@@ -1,0 +1,31 @@
+post
+	=> nrel_main_idtf:
+		[post](*<-lang_en;;*);
+		[должность](*<-lang_ru;;*);
+	=> nrel_idtf: [stand](*<-lang_en;;*); 
+		[пост](*<-lang_ru;;*);
+		[position](*<-lang_en;;*); 
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Должность</b> - служебное место, связанное с исполнением определенных служебных обязанностей и определенной ответственностью.] 
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: workplace;
+	<= nrel_using_constants:
+		{
+			duty;
+			responsibility
+		};;
+	
+workplace
+	=> nrel_main_idtf:
+		[workplace](*<- lang_en;;*);
+		[служебное место](*<- lang_ru;;*);;

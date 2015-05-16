@@ -1,0 +1,27 @@
+task
+	=> nrel_main_idtf:[task](*<-lang_en;;*);
+			[задача](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Задача</b> - это <sc_element sys_idtf="goal">цель</sc_element> (подцель) определенная в конкретных условиях.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+					[<b>Задача</b> - координированная и систематизированная серия элементов работы, используемых для достижения результатов.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: goal;
+	<= nrel_using_constants: 
+		{
+			goal;
+			result
+		};;

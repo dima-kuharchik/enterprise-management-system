@@ -1,0 +1,40 @@
+logistics
+	=> nrel_main_idtf:
+		[logistics](*<-lang_en;;*);
+		[логистика](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://logistics_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_subdividing:
+		{
+			business_logistics;
+			military_logistics;
+			city_logistics
+		};
+	<= nrel_inclusion: study;
+	=> nrel_using_constants:
+		{
+			planning;
+			management;
+			control;
+			material_resource;
+			information_resource;
+			financial_resource
+		};;
+		
+study
+	=> nrel_main_idtf:
+		[study](*<- lang_en;;*);
+		[учение](*<- lang_ru;;*);	
+	=> nrel_idtf:
+		[science](*<- lang_en;;*);
+		[discipline](*<- lang_en;;*);
+		[наука](*<- lang_ru;;*);
+		[научная дисциплина](*<- lang_ru;;*);;

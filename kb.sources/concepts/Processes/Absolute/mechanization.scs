@@ -1,0 +1,21 @@
+mechanization
+	=> nrel_main_idtf: [mechanization](*<- lang_en;;*);
+			[механизация](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Механизация</b> - процесс замены ручного труда машинным.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<= nrel_using_constants:
+		{
+			process
+		};;

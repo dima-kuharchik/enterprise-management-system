@@ -1,0 +1,30 @@
+units_of_measure
+	=> nrel_main_idtf:
+		[units of measure](*<- lang_en;;*);
+		[единицы измерения](*<- lang_ru;;*);
+	<= nrel_subdividing:
+		{
+			piece;
+			thousand_of_pieces;
+			monetary_unit
+		};;
+		
+piece
+	=> nrel_main_idtf:
+		[piece(s)](*<- lang_en;;*);
+		[штук(а)](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[pcs.](*<- lang_en;;*);
+		[шт.](*<- lang_ru;;*);;
+	
+thousand_of_pieces
+	=> nrel_main_idtf:
+		[thousand(s) of pieces](*<- lang_en;;*);
+		[тысяч штук](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[thous. pcs.](*<- lang_en;;*);
+		[тыс. шт.](*<- lang_ru;;*);
+	=> nrel_using_constants:
+		{
+			piece
+		};;

@@ -1,0 +1,23 @@
+cost
+	=> nrel_main_idtf:
+		[cost](*<- lang_en;;*);
+		[стоимость](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Стоимость</b> - выраженный в денежной форме и овеществленный в товаре труд товаропроизводителей, проявляющийся при обмене товарами в виде меновой стоимости.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_using_constants:
+		{
+			money;
+			goods;
+			exchange
+		};;

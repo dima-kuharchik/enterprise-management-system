@@ -1,0 +1,28 @@
+personnel
+	=> nrel_main_idtf:
+		[personnel](*<-lang_en;;*);
+		[персонал](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[staff](*<- lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Персонал</b> — совокупность трудовых ресурсов, которые находятся в распоряжении компании и необходимы для исполнения определённых функций, достижения целей и перспективного развития.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_inclusion: workforce;
+	<= nrel_subdividing: 
+		{
+			serving_staff; 
+			specialist;
+			subordinate;
+			technical_staff;
+			working_staff
+		};;

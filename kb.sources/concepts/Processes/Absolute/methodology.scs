@@ -1,0 +1,23 @@
+methodology
+	=> nrel_main_idtf:
+		[methodology](*<- lang_en;;*);
+		[методология](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Методология</b> - это учение об организации деятельности.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_inclusion: study;
+	=> nrel_using_constants:
+		{
+			organization;
+			activity
+		};;

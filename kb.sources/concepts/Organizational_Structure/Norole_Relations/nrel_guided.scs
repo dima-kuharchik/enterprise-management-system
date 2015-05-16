@@ -1,0 +1,27 @@
+nrel_guided
+	<- sc_node_norole_relation;
+	<- sc_type_norole_relation;
+	<- quasibinary_relation;
+	=> nrel_main_idtf:
+		[guided*](*<- lang_en;;*);
+		[руководствоваться*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Отношение "<b>руководствоваться</b>" связывает конкретного человека, либо должность которую он занимает, с положением нормативного документа.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	=> nrel_first_domain: person; personnel;
+	<= nrel_using_constants:
+		{
+			person;
+			post;
+			provision
+		};;

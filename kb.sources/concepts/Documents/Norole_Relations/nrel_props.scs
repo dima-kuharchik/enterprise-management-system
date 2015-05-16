@@ -1,0 +1,11 @@
+nrel_props
+	<- sc_node_norole_relation;
+	<- sc_type_norole_relation;
+	<- quasibinary_relation;
+	=> nrel_main_idtf:
+		[props*](*<- lang_en;;*);
+		[реквизит*](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[requisite*](*<- lang_en;;*);
+	=> nrel_first_domain: document;
+	=> nrel_second_domain: props;;

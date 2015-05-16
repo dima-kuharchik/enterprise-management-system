@@ -1,0 +1,91 @@
+business_logistics
+	=> nrel_main_idtf:[business logistics](*<-lang_en;;*);
+		[бизнес-логистика](*<-lang_ru;;*);
+	=> nrel_idtf: [logistics in economics](*<- lang_en;;*);
+			[логистика в экономике](*<- lang_ru;;*);
+			[экономическая логистика](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Логистика в экономике</b> - теория и практика планирования и управления товарно-материальным движением (транспортированием, складированием и другими операциями), а также передачей, хранением и переработкой соответствующих информационных и финансовых потоков.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_subdividing:
+		{
+			procurement_logistics;
+			retail_logistics;
+			warehouse_logistics;
+			financial_logistics;
+			information_logistics;
+			production_logistics;
+			distribution_logistics;
+			customs_logistics
+		};
+	<= nrel_inclusion: logistics;
+	<= nrel_using_constants:
+		{
+			planning;
+			management;
+			saves_promotion;
+			operation;
+			information_flow;
+			flow_of_funds
+		};;
+
+procurement_logistics
+	=> nrel_main_idtf:
+		[procurement logistics](*<- lang_en;;*);
+		[закупочная логистика](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[Закупочная логистика – процесс обеспечения предприятия материальными ресурсами, размещение ресурсов на складах предприятия, их хранение и выдача в производство.]
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;
+		
+
+retail_logistics
+	=> nrel_main_idtf:
+		[retail logistics](*<- lang_en;;*);
+		[сбытовая логистика](*<- lang_ru;;*);;
+		
+warehouse_logistics
+	=> nrel_main_idtf:
+		[warehouse logistics](*<- lang_en;;*);
+		[складская логистика](*<- lang_ru;;*);;
+		
+financial_logistics
+	=> nrel_main_idtf:
+		[financial logistics](*<- lang_en;;*);
+		[финансовая логистика](*<- lang_ru;;*);;
+		
+information_logistics
+	=> nrel_main_idtf:
+		[information logistics](*<- lang_en;;*);
+		[информационная логистика](*<- lang_ru;;*);;
+		
+production_logistics
+	=> nrel_main_idtf:
+		[production logistics](*<- lang_en;;*);
+		[производственная логистика](*<- lang_ru;;*);;
+		
+distribution_logistics
+	=> nrel_main_idtf:
+		[distribution logistics](*<- lang_en;;*);
+		[распределительная логистика](*<- lang_ru;;*);;
+		
+customs_logistics
+	=> nrel_main_idtf:
+		[customs logistics](*<- lang_en;;*);
+		[таможенная логистика](*<- lang_ru;;*);;

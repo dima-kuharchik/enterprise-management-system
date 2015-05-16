@@ -1,0 +1,160 @@
+management
+	=> nrel_main_idtf:[management](*<-lang_en;;*);
+			[управление](*<-lang_ru;;*);
+	=>nrel_idtf: 
+			[управленческая деятельность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Управление</b> - <sc_element sys_idtf="activity">деятельность</sc_element> субъекта управления по организации деятельности объекта управления.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);
+	<= nrel_inclusion: process; activity;
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_illustration
+			(*
+				<- rrel_key_sc_element:...
+				(*
+					<- sc_comment;;
+					<= nrel_sc_text_translation:...
+					(*
+						-> rrel_example:[Комплекс задач управления, функции и фазы управленческой деятельности]
+								(*<- lang_ru;;*);;
+					*);;
+				*);;
+			*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://management_cycle.png";; 
+				*);;
+		*);
+	=> nrel_principle:
+			hierarchy_principle;
+			unification_principle;
+			purposefulness_principle;
+			openness_principle;
+			efficiency_principle;
+			responsibility_principle;
+			noninterference_principle;
+			social_state_management_control;
+			development_principle;
+			completeness_and_forecasting_principle;
+			regulation_and_resource_provision;
+			feedback_principle;
+			adequacy_principle;
+			operativeness_principle;
+			anticipatory_reflection_principle;
+			adaptability_principle;
+			rational_centralization_principle;
+			democratic_governance_principle;
+			consistency_principle;
+			ethics_principle;;
+			
+hierarchy_principle
+	=> nrel_main_idtf:
+		[Hierarchy principle](*<- lang_en;;*);
+		[Принцип иерархии](*<- lang_ru;;*);;
+
+unification_principle
+	=> nrel_main_idtf:
+		[Unification principle](*<- lang_en;;*);
+		[Принцип унификации](*<- lang_ru;;*);;
+		
+purposefulness_principle
+	=> nrel_main_idtf:
+		[Purposefulness principle](*<- lang_en;;*);
+		[Принцип целенаправленности](*<- lang_ru;;*);;
+
+openness_principle
+	=> nrel_main_idtf:
+		[Openness principle](*<- lang_en;;*);
+		[Принцип открытости](*<- lang_ru;;*);;
+		
+efficiency_principle
+	=> nrel_main_idtf:
+		[Efficiency principle](*<- lang_en;;*);
+		[Принцип эффективности](*<- lang_ru;;*);;
+		
+responsibility_principle
+	=> nrel_main_idtf:
+		[Responsibility principle](*<- lang_en;;*);
+		[Принцип ответственности](*<- lang_ru;;*);;
+
+noninterference_principle
+	=> nrel_main_idtf:
+		[Noninterference principle](*<- lang_en;;*);
+		[Принцип невмешательства](*<- lang_ru;;*);;
+
+social_state_management_control
+	=> nrel_main_idtf:
+		[Social-state management_control](*<- lang_en;;*);
+		[Принцип общественно-государственного управления](*<- lang_ru;;*);;
+
+development_principle
+	=> nrel_main_idtf:
+		[Development principle](*<- lang_en;;*);
+		[Принцип развития](*<- lang_ru;;*);;
+
+completeness_and_forecasting_principle
+	=> nrel_main_idtf:
+		[Completeness and forecasting_principle](*<- lang_en;;*);
+		[Принцип полноты и прогнозирования](*<- lang_ru;;*);;
+
+regulation_and_resource_provision
+	=> nrel_main_idtf:
+		[Regulation and resource provision](*<- lang_en;;*);
+		[Принцип регламентации и ресурсного обеспечения](*<- lang_ru;;*);;
+
+feedback_principle
+	=> nrel_main_idtf:
+		[Feedback principle](*<- lang_en;;*);
+		[Принцип обратной связи](*<- lang_ru;;*);;
+
+adequacy_principle
+	=> nrel_main_idtf:
+		[Adequacy principle](*<- lang_en;;*);
+		[Принцип адекватности](*<- lang_ru;;*);;
+
+operativeness_principle
+	=> nrel_main_idtf:
+		[Operativeness principle](*<- lang_en;;*);
+		[Принцип оперативности](*<- lang_ru;;*);;
+		
+anticipatory_reflection_principle
+	=> nrel_main_idtf:
+		[The principle of anticipatory reflection](*<- lang_en;;*);
+		[Принцип опережающего отражения](*<- lang_ru;;*);;
+
+adaptability_principle
+	=> nrel_main_idtf:
+		[The principle of adaptability](*<- lang_en;;*);
+		[Принцип адаптивности](*<- lang_ru;;*);;
+
+rational_centralization_principle
+	=> nrel_main_idtf:
+		[The principle of rational centralization](*<- lang_en;;*);
+		[Принцип рациональной централизации](*<- lang_ru;;*);;
+
+democratic_governance_principle
+	=> nrel_main_idtf:
+		[The principle of democratic governance](*<- lang_en;;*);
+		[Принцип демократического управлеия](*<- lang_ru;;*);;
+
+consistency_principle
+	=> nrel_main_idtf:
+		[The principle of consistency](*<- lang_en;;*);
+		[Принцип согласованности](*<- lang_ru;;*);;
+
+ethics_principle
+	=> nrel_main_idtf:
+		[The principle of ethics](*<- lang_en;;*);
+		[Принцип этичности](*<- lang_ru;;*);;

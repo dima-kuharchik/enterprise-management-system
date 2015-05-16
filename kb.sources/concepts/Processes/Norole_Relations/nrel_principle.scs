@@ -1,0 +1,21 @@
+nrel_principle
+	<- sc_node_norole_relation;
+	<- sc_type_norole_relation;
+	<- binary_relation;
+	=> nrel_main_idtf:
+		[principle*](*<- lang_en;;*);
+		[принцип*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Принцип</b> - основное, исходное положение какой-либо теории, учения; руководящая идея, основное правило деятельности.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	=> nrel_first_domain: activity;;

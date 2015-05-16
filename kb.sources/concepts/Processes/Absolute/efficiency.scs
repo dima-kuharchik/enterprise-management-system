@@ -1,0 +1,38 @@
+efficiency
+	=> nrel_main_idtf:
+		[efficiency](*<- lang_en;;*);
+		[эффективность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			=> nrel_main_idtf: [Definition (efficiency)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (эффективность)](*<- lang_ru;;*);;
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Эффективность</b> — рациональность использования ресурсов при достижении какой-либо цели.] 
+						(*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_subdividing:
+		{
+			pareto_efficiency;
+			management_efficiency;
+			activity_efficiency
+		};
+	<= nrel_using_constants:
+		{
+			resource;
+			goal
+		};;
+
+pareto_efficiency
+	=> nrel_main_idtf:
+		[Парето эффективность](*<- lang_ru;;*);;
+
+management_efficiency
+	=> nrel_main_idtf:
+		[эффективность управления](*<- lang_ru;;*);;

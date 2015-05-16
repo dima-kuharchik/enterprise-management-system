@@ -1,0 +1,23 @@
+nrel_experience
+	<- sc_node_norole_relation;
+	<- sc_type_norole_relation;
+	<- binary_relation;
+	=> nrel_main_idtf:
+		[experience*](*<- lang_en;;*);
+		[опыт*](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[практический опыт*](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Опыт</b> - совокупность знаний и умений, приобретенных индивидом на основе и в процессе непосредственного практического взаимодействия с внешним миром.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	=> nrel_first_domain: person;;

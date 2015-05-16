@@ -1,0 +1,23 @@
+production_automation
+	=> nrel_main_idtf: [production automation](*<- lang_en;;*);
+			[автоматизация производства](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Автоматизация производства</b> - механизация производства с полным или частичным устранением физического труда рабочих. В процессе автоматизации труд людей замещается работой оборудования, действующего по принципу саморегуляции.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: process;
+	<= nrel_using_constants:
+		{
+			production;
+			process;
+			mechanization
+		};;

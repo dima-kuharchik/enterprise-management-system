@@ -1,0 +1,8 @@
+nrel_phone_number
+	<- sc_node_norole_relation;
+	<- sc_type_norole_relation;
+	<- binary_relation;
+	=> nrel_main_idtf:
+		[phone number*](*<- lang_en;;*);
+		[номер телефона*](*<- lang_ru;;*);
+	=> nrel_first_domain: person; enterprise;;

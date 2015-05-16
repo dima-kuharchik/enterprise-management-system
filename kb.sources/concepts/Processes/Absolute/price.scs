@@ -1,0 +1,25 @@
+price
+	=> nrel_main_idtf:
+		[price](*<- lang_en;;*);
+		[цена](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (price)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (цена)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Цена товара</b> - количество денег(или других товаров и услуг),уплачиваемое и получаемое за единицу товара или услуги.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	=> nrel_using_constants:
+		{
+			goods;
+			service;
+			money
+		};;

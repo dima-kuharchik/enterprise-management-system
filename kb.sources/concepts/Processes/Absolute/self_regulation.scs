@@ -1,0 +1,20 @@
+self_regulation
+	=> nrel_main_idtf: [self-regulation](*<- lang_en;;*);
+			[саморегуляция](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Саморегуляция</b> - деятельность субъекта по управлению самим собой.]
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: management;
+	<= nrel_using_constants:
+		{
+			subject;
+			activity;
+			management
+		};;

@@ -1,0 +1,21 @@
+object
+	=> nrel_main_idtf: [object](*<- lang_en;;*);
+			[объект](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Объект</b> - это предмет или процесс, на который направлена некоторая деятельность.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;										
+			*);;
+		*);
+	<= nrel_using_constants:
+		{
+			process;
+			activity
+		};;

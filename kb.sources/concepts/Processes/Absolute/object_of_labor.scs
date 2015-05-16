@@ -1,0 +1,24 @@
+object_of_labor
+	=> nrel_main_idtf:
+			[object of labor](*<- lang_en;;*);
+			[предмет труда](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Объект труда</b> - конкретный трудовой процесс, нормативно заданный, включающий предмет, средства (орудия), цели и задачи труда, правила исполнения работы и условия организации трудового процесса]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;										
+			*);;
+		*);
+	<= nrel_inclusion: object;
+	<= nrel_using_constants:
+		{
+			process;
+			mean;
+			goal
+		};;
