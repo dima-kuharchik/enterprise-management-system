@@ -1,0 +1,24 @@
+public_company
+	=> nrel_main_idtf:[Public company](*<-lang_en;;*);
+		[Публичная компания](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Public corporation](*<-lang_en;;*);
+		[Publicly held company](*<-lang_en;;*);
+		[Публичная акционерная компания](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://public_company_definition_en.html"
+					(*<- lang_en;;*);
+					"file://public_company_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: joint_stock_company;
+	=> nrel_used_constants:
+		{
+			share
+		};;

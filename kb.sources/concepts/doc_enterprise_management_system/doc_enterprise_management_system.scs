@@ -1,9 +1,0 @@
-doc_enterprise_mangement_system
-	=> nrel_main_idtf:
-			[Documentation on the Intelligent enterprise management system](*<- lang_en;;*);
-			[Документация по Интеллектуальной системе управления предприятием](*<- lang_ru;;*);
-	<= nrel_sc_text_translation:...
-		(*
-			-> "file://documentation.pdf"
-			(*<- lang_ru;;*);;
-		*);;

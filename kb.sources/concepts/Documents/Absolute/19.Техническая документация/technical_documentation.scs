@@ -1,0 +1,14 @@
+document => nrel_inclusion: technical_documentation;;
+technical_documentation
+	=> nrel_main_idtf: [technical documentation](*<- lang_en;;*);
+					   [техническая документация](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://technical_documentation.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

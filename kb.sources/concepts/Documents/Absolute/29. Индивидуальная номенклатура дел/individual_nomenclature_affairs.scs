@@ -1,0 +1,14 @@
+document => nrel_inclusion: individual_nomenclature_affairs;;
+individual_nomenclature_affairs
+	=> nrel_main_idtf: [approximate range of cases](*<- lang_en;;*);
+					   [примерная номенклатура дел](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://individual_nomenclature_affairs.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

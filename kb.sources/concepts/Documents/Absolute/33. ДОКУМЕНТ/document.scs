@@ -1,0 +1,53 @@
+document
+	=> nrel_main_idtf: [document](*<- lang_en;;*);
+					   [документ](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		organizational_document
+		(*
+			=> nrel_main_idtf: [organizational documents](*<-lang_en;;*);
+							   [организационные документы](*<- lang_ru;;*);;
+		*);
+		administrative_document
+		(*
+			=> nrel_main_idtf: [administrative documents](*<- lang_en;;*);
+							   [распорядительные документы](*<- lang_ru;;*);;			
+		*);
+		background_document
+		(*
+			=> nrel_main_idtf: [background documents](*<- lang_en;;*);
+							   [информационно-справочные документы](*<- lang_ru;;*);;			
+		*);
+	    accounting_records
+		(*
+			=> nrel_main_idtf: [accounting records](*<- lang_en;;*);
+							   [бухгалтерские документы](*<- lang_ru;;*);;			
+		*);
+		regulations_document
+		(*
+			=> nrel_main_idtf: [regulations](*<- lang_en;;*);
+							   [нормативные документы](*<- lang_ru;;*);;			
+		*);;
+	
+	document <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(Документирование)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Запись информации на различных носителях по установленным правилам называется документированием и представляет собой процесс создания и оформления документов. При документировании необходимо учитывать действующие нормы законодательства, компетенцию автора и соблюдать общегосударственные правила составления и оформления документа. ] (* <- lang_ru;; *);;
+		   *);;
+*);;	
+

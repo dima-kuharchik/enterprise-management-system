@@ -1,0 +1,14 @@
+document => nrel_inclusion: register_accounting;;
+register_accounting
+	=> nrel_main_idtf: [register accounting](*<- lang_en;;*);
+					   [регистр бухгалтерского учёта](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://register_accounting.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

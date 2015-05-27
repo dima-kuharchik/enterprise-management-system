@@ -1,0 +1,16 @@
+document_form
+	=> nrel_main_idtf:[document form](*<-lang_en;;*);
+		[формуляр документа](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://document_form_definition_en.html"
+					(*<- lang_en;;*);
+					"file://document_form_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: document;;

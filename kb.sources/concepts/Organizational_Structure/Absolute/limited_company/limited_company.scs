@@ -1,0 +1,27 @@
+limited_company
+	=> nrel_main_idtf:[Limited company](*<-lang_en;;*);
+		[Общество с ограниченной ответственностью (ООО)](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Private company](*<-lang_en;;*);
+		[Limited liability company](*<-lang_en;;*);
+		[Close corporation](*<-lang_en;;*);
+		[Компания с ограниченной ответственностью](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://limited_company_definition_en.html"
+					(*<- lang_en;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: share;
+	=> nrel_used_constants:
+		{
+			enterprise;
+			capital;
+			natural_person;
+			juridical_person;
+			contribution
+		};;

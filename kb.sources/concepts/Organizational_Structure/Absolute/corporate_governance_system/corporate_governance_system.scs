@@ -1,0 +1,18 @@
+corporate_governance_system
+	=> nrel_main_idtf:[Corporate Governance System](*<-lang_en;;*);
+		[Система корпоративного управления](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://corporate_governance_system_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: the_american_model_of_corporate_governance; the_german_model_of_corporate_governance; the_japanese_model_of_corporate_governance; the_family_model_of_corporate_governance;
+	=> nrel_used_constants:
+		{
+			enterprise
+		};;

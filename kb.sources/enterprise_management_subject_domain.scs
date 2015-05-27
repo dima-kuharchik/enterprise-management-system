@@ -1,0 +1,244 @@
+subject_domain_of_enterprise_management
+	=> nrel_main_idtf:
+		[Section. Subject Domain of Enterprise Management](*<- lang_en;;*);
+		[Раздел. Предметная область управления предприятием](*<- lang_ru;;*);
+	<= nrel_section_decomposition:
+		{
+			subject_domain_of_processes;
+			subject_domain_of_documentation_support;
+			subject_domain_of_organizational_structure;
+			enterprise_management_test_queries
+		};;
+	
+	
+subject_domain_of_processes
+	=> nrel_main_idtf:
+		[Section. Subject Domain of Enterprise Processes](*<- lang_en;;*);
+		[Раздел. Предметная область процессов на предприятии](*<- lang_ru;;*);
+	-> rrel_maximum_studied_object_class:
+			process;
+			activity;
+			action;
+			activity;
+			amortization;
+			automation;
+			business;
+			business_model;
+			business_process;
+			control;
+			costing;
+			delegation;
+			efficiency;
+			end_product;
+			exchange;
+			factor_of_production;
+			forecasting;
+			goal;
+			goal_seting;
+			goods;
+			income;
+			indicator;
+			information_flow;
+			logistic_chain;
+			logistic_operation;
+			logistic_system;
+			logistics;
+			management;
+			material_flow;
+			material_resource;
+			mean_of_labor;
+			mean_of_production;
+			method;
+			monitoring;
+			monitoring_and_analysis;
+			motive;
+			need;
+			object_of_labor;
+			object_of_management;
+			operation;
+			organizational_system;
+			organizing;
+			planning;
+			process;
+			product;
+			product_of_labor;
+			product_quality_control;
+			production;
+			profit;
+			profitability;
+			project;
+			records_management;
+			requirement;
+			result;
+			statistics;
+			stimulation;
+			subject_of_management;
+			result;
+			statistics;
+			stimulation;
+			system;
+			task;
+			technology;
+			validation;
+			valuable_end_product;
+			verification;
+			work_in_progress;
+			activity_efficiency;
+			business_logistics;
+			cost;
+			duty;
+			economic_efficiency;
+			mechanization;
+			methodology;
+			monetary_units;
+			money;
+			nrel_communication_means;
+			nrel_phone_number;
+			nrel_price;
+			object;
+			object_of_labor;
+			price;
+			production_automation;
+			resource;
+			self_regulation;
+			service;
+			units_of_measure;
+			workforce;
+	-> rrel_studied_relation:
+		nrel_customer;
+		nrel_consumer;
+		nrel_employee_qualification;
+		nrel_indicator;
+		nrel_job_qualification;
+		nrel_party_of_contract;
+		nrel_qualification;
+		nrel_balance_in_stock;
+		nrel_competence;
+		nrel_experience;
+		nrel_function;
+		nrel_mailing_address;
+		nrel_principle;
+		nrel_problem;
+		nrel_product;
+		nrel_supplier;
+		rrel_function;
+		rrel_problem;;
+		
+
+subject_domain_of_organizational_structure
+	=> nrel_main_idtf:
+		[Subject domain of enterprise organizational structure.](*<- lang_en;;*);
+		[Предметная область организационной структуры предприятия.](*<- lang_ru;;*);
+	<= nrel_section_decomposition:
+		{
+			subject_domain_of_enterprise_departments;
+			subject_domain_of_posts_and_personnel
+		};;
+		
+		
+subject_domain_of_enterprise_departments
+	=> nrel_main_idtf:
+		[Section. Enterprise departments.](*<- lang_en;;*);
+		[Раздел. Подразделения предприятия.](*<- lang_ru;;*);;
+		
+		
+subject_domain_of_posts_and_personnel
+	=> nrel_main_idtf:
+		[Section. Posts and personnel.](*<- lang_en;;*);
+		[Раздел. Должности и персонал предприятия.](*<- lang_ru;;*);
+	-> rrel_maximum_studied_object_class:
+		chief_accountant;
+		director;
+		employee;
+		head_of_production;
+		head_of_storage;
+		personnel;
+		post;
+		responsibility;
+		serving_staff;
+	-> rrel_studied_relation:
+		nrel_obligation;
+		nrel_guided;;
+	
+
+subject_domain_of_documentation_support
+	=> nrel_main_idtf:
+		[Subject domain of enterprise documentation support.](*<- lang_en;;*);
+		[Предметная область документационного обеспечения предприятия.](*<- lang_ru;;*);
+	-> rrel_maximum_studied_object_class:
+		act;
+		accounting_records;
+		accounts_receivable;
+		accounts_receivable;
+		administrative_document;
+		approximate_range_cases;
+		background_document;
+		balanced_scorecard;
+		cash_voucher;
+		charter;
+		commercial_invoice;
+		commercial_invoice;
+		contract;
+		country_contract;
+		country_of_origin;
+		customs_clearance;
+		customs_declaration;
+		disposal;
+		document;
+		document;
+		document_form;
+		document_waybill;
+		documents_flow;
+		engineering_process;
+		factory_form;
+		factory_requirement;
+		founding_contract;
+		founding_document;
+		goods_receiver;
+		goods_sender;
+		individual_nomenclature_affairs;
+		job_description;
+		job_specification;
+		job_ticket;
+		judicial_legal_document;
+		key_performance_indicators;
+		labor_contract;
+		legal_document;
+		limited_company;
+		management_theory;
+		nomenclature_affairs;
+		order;
+		organizational_document;
+		performance_criterion;
+		process_operation;
+		proforma_account;
+		props;
+		protocol;
+		register_accounting;
+		registry;
+		regulations_document;
+		regulations_document_norms;
+		regulations_document_rules;
+		regulations_document_standards;
+		road_waybill;
+		sadt;
+		share;
+		shipping_specification;
+		software_requirements;
+		software_specification;
+		specification;
+		staff_list;
+		staff_report;
+		standard_nomenclature_affairs;
+		standart;
+		standartization;
+		standing_order;
+		standing_order;
+		technical_documentation;
+		technological_map;
+		tnla;
+		waybill;
+		works_contract;
+
+	-> rrel_studied_relation:
+		nrel_props;;

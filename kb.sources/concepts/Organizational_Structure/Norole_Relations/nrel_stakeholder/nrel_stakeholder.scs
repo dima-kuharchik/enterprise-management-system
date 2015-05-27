@@ -1,0 +1,27 @@
+nrel_stakeholder
+	=> nrel_main_idtf:[Stakeholder](*<-lang_en;;*);
+		[Стейкхолдер](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Заинтересованная сторона](*<-lang_ru;;*);
+		[ Причастная сторона](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_stakeholder_definition_en.html"
+					(*<- lang_en;;*);
+					"file://nrel_stakeholder_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: organization; natural_person; nrel_the_degree_of_accounting_and_stakeholder_engagement;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	=> nrel_used_constants:
+		{
+			law;
+			system
+		};;

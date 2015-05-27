@@ -1,0 +1,24 @@
+factory_requirement
+	=> nrel_main_idtf:[requirement](*<-lang_en;;*);
+					  [требование](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://factory_requirement_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://factory_requirement_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: document;;

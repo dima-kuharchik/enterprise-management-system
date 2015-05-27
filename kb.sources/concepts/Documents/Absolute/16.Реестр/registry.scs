@@ -1,0 +1,25 @@
+document => nrel_inclusion: registry;;
+registry
+	=> nrel_main_idtf: [registry](*<- lang_en;;*);
+					   [реестр](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://registry.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		state_register_group
+		(*
+			=> nrel_main_idtf: [State Register of financial-industrial groups](*<-lang_en;;*);
+							   [Государственный реестр финансово-промышленных групп](*<- lang_ru;;*);;
+		*);
+		united_register_taxpayers
+		(*
+			=> nrel_main_idtf: [Unified State Register of taxpayers](*<- lang_en;;*);
+							   [Единый государственный реестр налогоплательщиков](*<- lang_ru;;*);;			
+		*);;

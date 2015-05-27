@@ -1,0 +1,14 @@
+document => nrel_inclusion: shipping_specification;;
+shipping_specification
+	=> nrel_main_idtf: [shipping specification](*<- lang_en;;*);
+					   [отгрузочная спецификация](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://shipping_specification.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

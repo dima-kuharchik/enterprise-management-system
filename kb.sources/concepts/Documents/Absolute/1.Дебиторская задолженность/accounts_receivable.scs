@@ -1,0 +1,15 @@
+document => nrel_inclusion: accounts_receivable;;
+
+accounts_receivable
+	=> nrel_main_idtf: [accounts_receivable](*<- lang_en;;*);
+					   [дебиторская задолженность](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://accounts_receivable.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

@@ -1,0 +1,15 @@
+document => nrel_inclusion: software_specification;;
+software_specification
+	=> nrel_main_idtf: [software specification](*<- lang_en;;*);
+			[спецификация программного обеспечения](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://software_specification.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nrel_using_constants: document;;

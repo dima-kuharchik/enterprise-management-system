@@ -1,0 +1,38 @@
+engineering_process => nrel_inclusion: process_operation;;
+process_operation
+	=> nrel_main_idtf: [process operation](*<- lang_en;;*);
+					   [технологическая операция](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://process_operation.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		transport_operation
+		(*
+			=> nrel_main_idtf: [transport process](*<-lang_en;;*);
+							   [транспортная технологическая операция](*<- lang_ru;;*);;
+		*);
+		inspection_operation
+		(*
+			=> nrel_main_idtf: [inspection process](*<- lang_en;;*);
+							   [контрольно-измерительная технологическая операция](*<- lang_ru;;*);;			
+		*);;
+
+	process_operation <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(технологическая операция, документ, учет)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Технологическая операция является основной единицей производственного планирования и учета. На основе операций определяется трудоемкость изготовления изделий и устанавливаются нормы времени и расценки, задается требуемое количество рабочих, оборудования, приспособлений и инструментов, определяется себестоимость обработки, производится календарное планирование производства и осуществляется контроль качества и сроков исполнения работ..] (* <- lang_ru;; *);;
+		   *);;
+*);;	

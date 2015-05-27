@@ -1,0 +1,35 @@
+person1
+	=> nrel_main_idtf:
+		[Рабинович Александр Дмитриевич](*<- lang_ru;;*);
+	<- person;
+	=> nrel_post: director;
+	=> nrel_mailing_address: [ул. Детская, 44-321];
+	=> nrel_email: [rabinovich_ad@shmail.com];
+	<= nrel_employee: enterprise1;;
+
+person2
+	=> nrel_main_idtf:
+		[Фёдоров Пётр Фёдорович](*<- lang_ru;;*);
+	<- person;
+	=> nrel_post: chief_accountant;
+	=> nrel_mailing_address: [ул. Горностайская, 32-104];
+	=> nrel_email: [fedorov.pf@tam.by];
+	<= nrel_employee: enterprise1;;
+
+person3
+	=> nrel_main_idtf:
+		[Петров Фёдор Петрович](*<- lang_ru;;*);
+	<- person;
+	=> nrel_post: head_of_production;
+	=> nrel_mailing_address: [ул. Седобородая, 21-55];
+	=> nrel_email: [petrov_fp@mail.by];
+	<= nrel_employee: enterprise1;;
+
+person4
+	=> nrel_main_idtf:
+		[Трупов Порфирий Парамонович](*<- lang_en;;*);
+	<- person;
+	=> nrel_post: head_of_storage;
+	=> nrel_mailing_address: [ул. Зелёная, 33-123];
+	=> nrel_email: [trupov_pp@shmail.com];
+	<= nrel_employee: enterprise1;;

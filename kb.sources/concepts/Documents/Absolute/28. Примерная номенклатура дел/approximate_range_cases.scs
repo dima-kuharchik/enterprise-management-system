@@ -1,0 +1,14 @@
+document => nrel_inclusion: approximate_range_cases;;
+approximate_range_cases
+	=> nrel_main_idtf: [approximate range of cases](*<- lang_en;;*);
+					   [примерная номенклатура дел](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://approximate_range_cases.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

@@ -1,0 +1,36 @@
+document => nrel_inclusion: road_waybill;;
+road_waybill
+	=> nrel_main_idtf: [road waybill](*<- lang_en;;*);
+			[дорожная накладная](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://road_waybill.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		consignor
+		(*
+			=> nrel_main_idtf: [consignor](*<-lang_en;;*);
+					[отправитель груза](*<- lang_ru;;*);;
+		*);
+		consignee
+		(*
+			=> nrel_main_idtf: [consignee](*<- lang_en;;*);
+					[получатель груза](*<- lang_ru;;*);;			
+		*);
+		departure_point
+		(*
+			=> nrel_main_idtf: [departure point](*<-lang_en;;*);
+					[пункт отправления](*<- lang_ru;;*);;
+		*);
+		destination
+		(*
+			=> nrel_main_idtf: [destination](*<-lang_en;;*);
+					[пункт назначения](*<- lang_ru;;*);;
+		*);
+	=> nrel_using_constants: document;;

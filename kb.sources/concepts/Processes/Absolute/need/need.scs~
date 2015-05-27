@@ -20,22 +20,23 @@ need
 		*);
 	<= nrel_subdividing:...
 		(*
-			=> nrel_main_idtf: [Subdividing by scope](*<- lang_en;;*);;
-			=> nrel_main_idtf: [Разбиение по сфере деятельности](*<- lang_ru;;*);;
-			-> labor_need;
-			communication_need;
-			rest_need;
-			cognition_need;;
+			=> nrel_main_idtf: [By scope](*<- lang_en;;*);;
+			=> nrel_main_idtf: [По сфере деятельности](*<- lang_ru;;*);;
+			-> labor_need;;
+			-> communication_need;;
+			-> rest_need;;
+			-> cognition_need;;
 		*);
-	<= nrel_subdividing:...
+	<= nrel_subdividing:
 		(*
-			=> nrel_main_idtf: [Subdividing by the subject](*<- lang_en;;*);;
-			=> nrel_main_idtf: [Разбиение по субъекту](*<- lang_ru;;*);;
-			-> group_need;
-			individual_need;
-			collective_need;
-			social_need;;
-		*);;
+			=> nrel_main_idtf: [By the subject](*<- lang_en;;*);;
+			=> nrel_main_idtf: [По субъекту](*<- lang_ru;;*);;
+			-> group_need;;
+			-> individual_need;;
+			-> collective_need;;
+			-> social_need;;
+		*);
+	<= nrel_inclusion: state;;
 	
 labor_need
 	=> nrel_main_idtf:

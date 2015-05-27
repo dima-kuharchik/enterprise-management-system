@@ -1,0 +1,23 @@
+subject
+	=> nrel_main_idtf:
+		[subject](*<- lang_en;;*);
+		[субъект](*<- lang_ru;;*);;
+subject
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Субъект</b> - индивид или социальная группа, выступающие носителем предметно-практической деятельности и познания. Субъект является источником активности, направленной на объект.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_using_constants:
+		{
+			activity;
+			object
+		};;

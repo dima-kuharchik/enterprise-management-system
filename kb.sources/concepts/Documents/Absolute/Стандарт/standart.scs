@@ -1,0 +1,15 @@
+document => nrel_inclusion: standart;;
+standart
+	=> nrel_main_idtf: [standart](*<- lang_en;;*);
+			[стандарт](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://standart.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nnrel_using_constants: document;;

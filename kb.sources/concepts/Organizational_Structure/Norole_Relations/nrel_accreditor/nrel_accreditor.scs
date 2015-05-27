@@ -1,0 +1,23 @@
+nrel_accreditor
+	=> nrel_main_idtf:[Accreditor](*<-lang_en;;*);
+		[Аккредитор](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Инспектор ](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_accreditor_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: organization; natural_person;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	=> nrel_used_constants:
+		{
+			system
+		};;

@@ -1,0 +1,31 @@
+administrative_document
+	=> nrel_main_idtf: [organizational documents](*<- lang_en;;*);
+			[Распорядительные документы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://administrative_document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+=> nrel_inclusion:
+		administrative_document_order
+		(*
+			=> nrel_main_idtf: [order](*<-lang_en;;*);
+					[приказ](*<- lang_ru;;*);;
+		*);
+		administrative_document_disposal
+		(*
+			=> nrel_main_idtf: [disposal](*<- lang_en;;*);
+					[распоряжение](*<- lang_ru;;*);;			
+		*);
+		administrative_document_designation
+		(*
+			=> nrel_main_idtf: [designation](*<- lang_en;;*);
+					[указание](*<- lang_ru;;*);;			
+		*);;
+
+		administrative_document <= nrel_inclusion: document ;;

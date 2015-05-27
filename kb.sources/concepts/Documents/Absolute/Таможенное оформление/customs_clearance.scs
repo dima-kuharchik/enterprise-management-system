@@ -1,0 +1,15 @@
+document => nrel_inclusion: customs_clearance;;
+customs_clearance
+	=> nrel_main_idtf: [customs clearance](*<- lang_en;;*);
+			[таможенное оформление](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://customs_clearance.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nrel_using_constants: document;;

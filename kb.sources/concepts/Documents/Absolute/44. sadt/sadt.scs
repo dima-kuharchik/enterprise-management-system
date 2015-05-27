@@ -1,0 +1,16 @@
+sadt
+	=> nrel_main_idtf:[sadt](*<-lang_en;;*);
+		[методология структурного анализа и проектирования](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://sadt_definition_en.html"
+					(*<- lang_en;;*);
+					"file://sadt_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: document;;

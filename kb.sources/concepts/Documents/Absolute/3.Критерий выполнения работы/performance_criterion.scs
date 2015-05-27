@@ -1,0 +1,14 @@
+document => nrel_inclusion: performance_criterion;;
+performance_criterion
+	=> nrel_main_idtf: [performance criterion](*<- lang_en;;*);
+					   [критерий выполнения работы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://performance_criterion.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

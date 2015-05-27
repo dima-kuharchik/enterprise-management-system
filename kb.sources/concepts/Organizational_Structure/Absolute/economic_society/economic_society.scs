@@ -1,0 +1,21 @@
+economic_society
+	=> nrel_main_idtf:[Economic society](*<-lang_en;;*);
+		[Хозяйственное общество](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://economic_society_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: joint_stock_company; limited_company;
+	<= nrel_inclusion: company;
+	=> nrel_used_constants:
+		{
+			share;
+			founder;
+			authorised_capital
+		};;

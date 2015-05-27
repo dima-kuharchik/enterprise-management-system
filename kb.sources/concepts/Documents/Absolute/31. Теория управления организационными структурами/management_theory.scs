@@ -1,0 +1,28 @@
+management_theory
+	=> nrel_main_idtf:[management theory of organizational systems](*<-lang_en;;*);
+					  [теория управления организационными системами](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://management_theory_definition_en.html"
+					(*<- lang_en;;*);
+					"file://management_theory_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://management_theory_statement_en.html"
+					(*<- lang_en;;*);
+					"file://management_theory_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: document;;

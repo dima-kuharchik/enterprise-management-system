@@ -1,0 +1,14 @@
+document => nrel_inclusion: standard_nomenclature_affairs;;
+standard_nomenclature_affairs
+	=> nrel_main_idtf: [standard nomenclature affairs](*<- lang_en;;*);
+			[типовая номенклатура дел](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://standard_nomenclature_affairs.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

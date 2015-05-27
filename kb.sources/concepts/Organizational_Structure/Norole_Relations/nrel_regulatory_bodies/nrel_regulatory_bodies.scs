@@ -1,0 +1,21 @@
+nrel_regulatory_bodies
+	=> nrel_main_idtf:[Regulatory bodies](*<-lang_en;;*);
+		[Регулирующий орган](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_regulatory_bodies_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: subject_of_economic_relations;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	=> nrel_used_constants:
+		{
+			system
+		};;

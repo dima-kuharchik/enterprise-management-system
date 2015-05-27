@@ -1,0 +1,22 @@
+open_joint_stock_company
+	=> nrel_main_idtf:[Open Joint Stock Company](*<-lang_en;;*);
+		[Открытое акционерное общество](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[ОАО](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://open_joint_stock_company_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: share;
+	<= nrel_inclusion: joint_stock_company;
+	=> nrel_used_constants:
+		{
+			enterprise;
+			rialto
+		};;

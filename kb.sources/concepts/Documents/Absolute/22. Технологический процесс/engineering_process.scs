@@ -1,0 +1,43 @@
+engineering_process => nrel_inclusion: manufacturing_process;;
+engineering_process
+	=> nrel_main_idtf: [engineering process](*<- lang_en;;*);
+					   [технологический процесс](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://engineering_process.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		single_process
+		(*
+			=> nrel_main_idtf: [single process](*<-lang_en;;*);
+							   [единичный технологический процесс](*<- lang_ru;;*);;
+		*);
+		typical_process
+		(*
+			=> nrel_main_idtf: [typical process](*<- lang_en;;*);
+							   [типовой технологический процесс](*<- lang_ru;;*);;			
+		*);
+		group_process
+		(*
+			=> nrel_main_idtf: [group process](*<- lang_en;;*);
+							   [групповой технологический процесс](*<- lang_ru;;*);;			
+		*);;
+
+	engineering_process <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(технологический процесс, документ, учет)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Элементарным технологическим процессом или технологической операцией называется наименьшая часть технологического процесса, обладающая всеми его свойствами. ] (* <- lang_ru;; *);;
+		   *);;
+*);;	

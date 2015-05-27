@@ -1,0 +1,28 @@
+key_performance_indicators
+	=> nrel_main_idtf:[key performance indicators](*<-lang_en;;*);
+					  [ключевые показатели эффективности](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://key_performance_indicators_definition_en.html"
+					(*<- lang_en;;*);
+					"file://key_performance_indicators_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_statement;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://key_performance_indicators_statement_en.html"
+					(*<- lang_en;;*);
+					"file://key_performance_indicators_statement_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: document;;

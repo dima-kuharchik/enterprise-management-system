@@ -1,0 +1,31 @@
+background_document
+	=> nrel_main_idtf: [background documents](*<- lang_en;;*);
+			[информационно-справочные документы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://background_document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+=> nrel_inclusion:
+		background_document_act
+		(*
+			=> nrel_main_idtf: [act](*<-lang_en;;*);
+					[акт](*<- lang_ru;;*);;
+		*);
+		background_document_protocol
+		(*
+			=> nrel_main_idtf: [protocol](*<- lang_en;;*);
+					[протокол](*<- lang_ru;;*);;			
+		*);
+		background_document_memorandum
+		(*
+			=> nrel_main_idtf: [memorandum](*<- lang_en;;*);
+					[докладная записка](*<- lang_ru;;*);;			
+		*);;
+
+		document => nrel_inclusion: background_document ;;

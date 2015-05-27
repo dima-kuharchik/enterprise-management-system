@@ -1,0 +1,4 @@
+flow_of_funds
+	=> nrel_main_idtf:
+		[flow of funds](*<- lang_en;;*);
+		[финансовый поток](*<- lang_ru;;*);;

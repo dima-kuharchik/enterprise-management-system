@@ -1,0 +1,38 @@
+service	
+	=> nrel_main_idtf:
+		[service](*<- lang_en;;*);
+		[услуга](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			=> nrel_main_idtf: [Definition (service)](*<- lang_en;;*);;
+			=> nrel_main_idtf: [Определение (услуга)](*<- lang_ru;;*);;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Услуга</b> - это товар, который может производиться, передаваться и потребляться одновременно. Услуга характеризуется неосязаемостью, несохраняемостью, непостоянством качества и неотделимостью от источника.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+						[<b>Услуга</b> - это действие, направленное непосредственно на потребителя.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+						[<b>Услуга</b> - это вид деятельности, в процессе выполнения которого не создается новый материально-вещественный продукт, но изменяется качество имеющегося продукта.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);
+	<= nrel_inclusion: product; activity;
+	<= nrel_using_constants:
+		{
+			goods;
+			action;
+			nrel_consumer;
+			material_product;
+			nrel_quality_characteristic
+		};;

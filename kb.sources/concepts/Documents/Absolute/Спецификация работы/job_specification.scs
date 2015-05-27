@@ -1,0 +1,15 @@
+document => nrel_inclusion: job_specification;;
+job_specification
+	=> nrel_main_idtf: [job specification](*<- lang_en;;*);
+			[спецификация работы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://job_specification.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nrel_using_constants: document;;

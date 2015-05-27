@@ -1,0 +1,14 @@
+document => nrel_inclusion: proforma_account;;
+proforma_account
+	=> nrel_main_idtf: [proforma account](*<- lang_en;;*);
+					   [проформа-счет](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://proforma_account.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

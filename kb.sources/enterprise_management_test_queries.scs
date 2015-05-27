@@ -1,0 +1,25 @@
+enterprise_management_test_queries
+	=> nrel_main_idtf:
+		[Section. Test Queries to Enterprise Management Intelligence System](*<- lang_en;;*);
+		[Раздел. Тестовые запросы к Интеллектуальной Системе Управления Предприятием](*<- lang_ru;;*);
+	-> rrel_maximum_studied_object_class:
+		activity_components_query;
+		all_processes_query;
+		employee_query1;
+		goods_query1;
+		enterprises_query1;
+		logistics_subdividing;
+		management_principles_query;
+		management_query;
+		nrel_counter_party_domains_query;
+		production_cycle_periods_query;
+		workforce_statement_query;
+		pattern1;
+		pattern2;
+		pattern3;
+		pattern4;
+		pattern5;
+		pattern6;
+		pattern7;
+		pattern8;
+		pattern9;;

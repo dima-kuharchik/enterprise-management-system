@@ -1,0 +1,17 @@
+the_family_model_of_corporate_governance
+	=> nrel_main_idtf:[The family model of corporate governance](*<-lang_en;;*);
+		[Семейная модель корпоративного управления](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://the_family_model_of_corporate_governance_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_used_constants:
+		{
+			enterprise
+		};;

@@ -1,0 +1,31 @@
+accounting_records
+	=> nrel_main_idtf: [accounting records](*<- lang_en;;*);
+			[бухгалтерские документы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://accounting_records.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+=> nrel_inclusion:
+		accounting_records_payment_order
+		(*
+			=> nrel_main_idtf: [payment order](*<-lang_en;;*);
+					[платёжное поручение](*<- lang_ru;;*);;
+		*);
+		commercial_invoice
+		(*
+			=> nrel_main_idtf: [commercial_invoice](*<- lang_en;;*);
+					[счет-фактура](*<- lang_ru;;*);;			
+		*);
+		accounting_records_waybill
+		(*
+			=> nrel_main_idtf: [waybill](*<- lang_en;;*);
+					[накладная](*<- lang_ru;;*);;			
+		*);;
+
+		accounting_records <= nrel_inclusion: document ;;

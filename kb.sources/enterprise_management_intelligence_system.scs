@@ -1,0 +1,10 @@
+enterprise_management_intelligence_system
+	=> nrel_main_idtf:
+		[ENTERPRISE MANAGEMENT INTELLIGENCE SYSTEM](*<- lang_en;;*);
+		[ИНТЕЛЛЕКТУАЛЬНАЯ СИСТЕМА ПО УПРАВЛЕНИЮ ПРЕДПРИЯТИЕМ](*<- lang_ru;;*);
+	<- ui_start_sc_element;
+	<= nrel_section_decomposition:
+		{
+			doc_enterprise_management_system;
+			subject_domain_of_enterprise_management
+		};;

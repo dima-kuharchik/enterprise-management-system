@@ -1,0 +1,19 @@
+the_japanese_model_of_corporate_governance
+	=> nrel_main_idtf:[The Japanese model of corporate governance](*<-lang_en;;*);
+		[Японская модель корпоративного управления](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://the_japanese_model_of_corporate_governance_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_used_constants:
+		{
+			joint_stock_company;
+			manager;
+			bank
+		};;

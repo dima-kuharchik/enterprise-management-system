@@ -1,0 +1,24 @@
+nrel_camera
+	=> nrel_main_idtf:[Camera](*<-lang_en;;*);
+		[Камера](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Video camera](*<-lang_en;;*);
+		[Photo camera](*<-lang_en;;*);
+		[Видеокамера](*<-lang_ru;;*);
+		[ Фотокамера](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_camera_definition_en.html"
+					(*<- lang_en;;*);
+					"file://nrel_camera_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	<= nrel_inclusion: electronics; technology;;

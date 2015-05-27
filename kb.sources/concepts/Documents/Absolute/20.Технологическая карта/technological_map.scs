@@ -1,0 +1,14 @@
+document => nrel_inclusion: technological_map;;
+technological_map
+	=> nrel_main_idtf: [technological map](*<- lang_en;;*);
+					   [технологическая карта](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://technological_map.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

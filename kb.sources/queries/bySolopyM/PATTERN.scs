@@ -1,0 +1,33 @@
+pattern1 -> [* document _=> nrel_inclusion :: _variable ;; *];;
+/* Какие существуют документы? */
+
+pattern2 -> [* selmach _=> nrel_workers_number :: _variable ;; *];;
+/* Какое число сотрудников завода ГомСельмаш? */
+
+pattern3 -> [* _variable _=> nrel_using :: document ;; *];;
+/* В каких областях нужен документ? */
+
+pattern4 -> [* registry _<= nrel_inclusion :: _variable ;; *];;
+/* Какие существуют реестры? */
+
+pattern5 -> [* nomenclature_affairs _<= nrel_inclusion :: _variable ;; *];;
+/* Какие существуют номенклатуры дел? */
+
+pattern6 -> [* road_waybill _<= nrel_inclusion :: _variable ;; *];;
+/* Что включает в себя дорожная накладная? */
+
+pattern7 -> [* judicial_legal_document_props _=> nrel_props :: _variable ;; *];;
+                                        
+/* Какие существуют реквизиты судебного документа? */
+
+pattern8 -> [* identity_document _=> nrel_inclusion :: _variable;; *] ;;
+/* Какие бывают документы, удостоверяющие личность? */
+
+pattern9 -> [* legal_document _=> nrel_inclusion :: _variable
+                                           (* _=> nrel_using_area  :: _variable1 ;; *) ;; *];;
+/* В каких областях используется накладная? */
+
+pattern10 -> [* cash_voucher _=> _variable :: purchase;; *] ;;
+/* В каких областях используется кассовый чек? */
+
+

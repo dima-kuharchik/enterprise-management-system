@@ -1,0 +1,15 @@
+document => nrel_inclusion: commercial_invoice;;
+commercial_invoice
+	=> nrel_main_idtf: [commercial invoice](*<- lang_en;;*);
+			[счет-фактура](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://commercial_invoice.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nrel_using_constants: document;;

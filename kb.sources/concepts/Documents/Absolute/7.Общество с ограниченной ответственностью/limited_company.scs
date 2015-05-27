@@ -1,0 +1,14 @@
+document => nrel_inclusion: limited_company;;
+limited_company
+	=> nrel_main_idtf: [limited liability company](*<- lang_en;;*);
+					   [общество с ограниченной ответственностью](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://limited_company.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

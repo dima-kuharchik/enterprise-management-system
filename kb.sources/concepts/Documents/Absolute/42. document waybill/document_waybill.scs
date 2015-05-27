@@ -1,0 +1,26 @@
+document_waybill
+=> nrel_main_idtf: [waybill](*<- lang_en;;*);
+			[накладная](*<- lang_ru;;*);;
+document => nrel_inclusion: document_waybill;;
+
+nrel_usage_area <- sc_node_norole_relation;
+	 => nrel_main_idtf: 
+	[area of usage*](*<- lang_en;;*);
+	[область использования*](*<- lang_ru;;*);;
+
+	document_waybill => nrel_usage_area: 
+		organizations
+		(*
+			=> nrel_main_idtf: [organizations](*<-lang_en;;*);
+					[организации](*<- lang_ru;;*);;
+		*);
+		factories
+		(*
+			=> nrel_main_idtf: [factories](*<-lang_en;;*);
+					[предприятия](*<- lang_ru;;*);;
+		*);
+		entities
+		(*
+			=> nrel_main_idtf: [entities](*<-lang_en;;*);
+					[юридические лица](*<- lang_ru;;*);;
+		*);;

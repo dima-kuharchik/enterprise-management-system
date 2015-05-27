@@ -1,0 +1,43 @@
+software_requirements => nrel_inclusion: manufacturing_process;;
+software_requirements
+	=> nrel_main_idtf: [software requirements](*<- lang_en;;*);
+					   [требования к программному обеспечению](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://software_requirements.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	<= nrel_inclusion:
+		business_requirements
+		(*
+			=> nrel_main_idtf: [business requirements](*<-lang_en;;*);
+							   [бизнес требования](*<- lang_ru;;*);;
+		*);
+		user_requirements
+		(*
+			=> nrel_main_idtf: [user requirements](*<- lang_en;;*);
+							   [пользовательские требования](*<- lang_ru;;*);;			
+		*);
+		functional_requirements
+		(*
+			=> nrel_main_idtf: [functional requirements](*<- lang_en;;*);
+							   [функциональные требования](*<- lang_ru;;*);;			
+		*);;
+
+	software_requirements <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(требования к программному обеспечению)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [В классическом техническом подходе совокупность требований используется на стадии проектирования программного обеспечения (ПО). Требования также используются в процессе проверки ПО, так как тесты основываются на определённых требованиях. ] (* <- lang_ru;; *);;
+		   *);;
+*);;	

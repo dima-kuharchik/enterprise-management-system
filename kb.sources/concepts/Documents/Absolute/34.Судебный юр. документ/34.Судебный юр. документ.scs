@@ -1,0 +1,68 @@
+document => nrel_inclusion: legal_document;;
+legal_document
+	=> nrel_main_idtf: [legal document](*<- lang_en;;*);
+			[юридический документ](*<- lang_ru;;*);;
+identity_document
+	=> nrel_main_idtf: [identity document](*<- lang_en;;*);
+			[документ удостоверяющий личность](*<- lang_ru;;*);;
+			legal_document => nrel_inclusion: identity_document;;
+ identity_document => nrel_inclusion: 
+		identity_document_passport
+		(*
+			=> nrel_main_idtf: [passport](*<-lang_en;;*);
+							   [паспорт](*<- lang_ru;;*);;
+		*);
+		drivers_license
+		(*
+			=> nrel_main_idtf: [driver's license](*<-lang_en;;*);
+							   [водительское удостоверение](*<- lang_ru;;*);;
+		*);;
+
+
+
+judicial_legal_document
+	=> nrel_main_idtf: [judicial legal document](*<- lang_en;;*);
+					   [судебный юридический документ](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://judicial_legal_document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;
+		document => nrel_inclusion: judicial_legal_document;;
+
+		judicial_legal_document => nrel_props: 
+		judicial_legal_document_props
+		(*
+			=> nrel_main_idtf: [legal document props](*<-lang_en;;*);
+							   [реквизит судебного документа](*<- lang_ru;;*);;
+		*);;
+		judicial_legal_document_props => nrel_props: emblem_of_court
+		(*
+			=> nrel_main_idtf: [emblem of court](*<-lang_en;;*);
+							   [изображение эмблемы суда](*<- lang_ru;;*);;
+		*);
+		judicial_document_date
+		(*
+			=> nrel_main_idtf: [document date](*<-lang_en;;*);
+							   [дата подписания документа](*<- lang_ru;;*);;
+		*);
+	    document_place_of_writing
+		(*
+			=> nrel_main_idtf: [place of writing](*<-lang_en;;*);
+							   [место подписания](*<- lang_ru;;*);;
+		*);;
+
+
+	nrel_props <- sc_node_norole_relation;
+	 => nrel_main_idtf: 
+	[accounting records](*<- lang_en;;*);
+	[реквизит*](*<- lang_ru;;*);;
+
+	legal_document
+	=> nrel_main_idtf: [legal document](*<- lang_en;;*);
+			[юридический документ](*<- lang_ru;;*);;

@@ -1,0 +1,26 @@
+job_ticket => nrel_inclusion: document;;
+job_ticket
+	=> nrel_main_idtf: [job ticket](*<- lang_en;;*);
+					   [наряд-заказ](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://job_ticket.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;
+	job_ticket <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(наряд-заказ)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Термин "Наряд-заказ" как таковой отсутствует в Гражданском кодексе РФ и в Общероссийском классификаторе управленческой документации (ОКУД) ОК-011-93. В то же время унифицированные формы наряд-заказов для предприятий бытового обслуживания утверждены Министерством финансов РФ.  ] (* <- lang_ru;; *);;
+		   *);;
+*);;	

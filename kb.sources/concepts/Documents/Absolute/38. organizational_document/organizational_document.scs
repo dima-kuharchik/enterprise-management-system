@@ -1,0 +1,31 @@
+organizational_document
+	=> nrel_main_idtf: [organizational documents](*<- lang_en;;*);
+			[организационные документы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://organizational_document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+=> nrel_inclusion:
+		organizational_document_charter
+		(*
+			=> nrel_main_idtf: [charter](*<-lang_en;;*);
+					[устав](*<- lang_ru;;*);;
+		*);
+		organizational_document_position
+		(*
+			=> nrel_main_idtf: [position](*<- lang_en;;*);
+					[положение](*<- lang_ru;;*);;			
+		*);
+		organizational_document_staff_list
+		(*
+			=> nrel_main_idtf: [staff list](*<- lang_en;;*);
+					[штатное расписание](*<- lang_ru;;*);;			
+		*);;
+
+		document => nrel_inclusion: organizational_document ;;

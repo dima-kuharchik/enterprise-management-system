@@ -1,0 +1,30 @@
+factory_form => nrel_inclusion: document;;
+factory_form
+	=> nrel_main_idtf: [factory form](*<- lang_en;;*);
+					   [договорный формуляр](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://factory_form.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;
+factory_form => nrel_synonyms: 
+	bibliographic_card
+	(*=> nrel_main_idtf: [bibliographic card](*<- lang_en;;*);
+					     [библиографическая карточка](*<- lang_ru;;*);;*);;
+
+factory_form => nrel_synonyms: ... 
+(*
+         => nrel_main_idtf: [утв.(формуляр, договор)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Договорные формуляры обычно создают преимущества для разработавшей их стороны и ограничивают для контрагентов возможность выражения и закрепления в договоре своих интересов. Д ] (* <- lang_ru;; *);;
+		   *);;
+*);;	

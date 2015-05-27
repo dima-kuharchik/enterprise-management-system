@@ -1,0 +1,23 @@
+the_american_model_of_corporate_governance
+	=> nrel_main_idtf:[The American model of corporate governance](*<-lang_en;;*);
+		[Американская модель корпоративного управления](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[The insider model of corporate governance](*<-lang_en;;*);
+		[Аутсайдерская модель корпоративного управления](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://the_american_model_of_corporate_governance_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_used_constants:
+		{
+			joint_stock_company;
+			enterprise;
+			shareholder;
+			investor
+		};;

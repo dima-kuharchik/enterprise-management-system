@@ -1,0 +1,27 @@
+document => nrel_inclusion: nomenclature_affairs;;
+nomenclature_affairs
+	=> nrel_main_idtf: [nomenclature_affairs](*<- lang_en;;*);
+					   [номенклатура дел](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nomenclature_affairs.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;
+
+	nomenclature_affairs <= nrel_main_statements:
+... 
+(*
+         => nrel_main_idtf: [утв.(номенклатура)] (* <-lang_ru;; *);;
+         <- sc_statement;;
+         <= nrel_sc_text_translation: 
+		   ...
+		   (*
+		   -> rrel_example: 
+		   [Номенклатура дел устанавливает сроки хранения документов и является пособием по проведению первого этапа экспертизы ценности.] (* <- lang_ru;; *);;
+		   *);;
+*);;	

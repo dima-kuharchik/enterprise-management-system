@@ -1,0 +1,19 @@
+selmach
+	=> nrel_main_idtf: [Selmash factory](*<- lang_en;;*);
+	=> nrel_main_idtf: [Завод Гомсельмаш](*<- lang_ru;;*);;
+selmach => nrel_workers_number: [3750];;
+
+nrel_workers_number <- sc_node_norole_relation;
+	 => nrel_main_idtf: 
+	[number of workers*](*<- lang_en;;*);
+	[число сотрудников*](*<- lang_ru;;*);;
+
+nrel_using <- sc_node_norole_relation;
+	 => nrel_main_idtf: 
+	[using*](*<- lang_en;;*);
+	[использование*](*<- lang_ru;;*);;
+
+job_ticket => nrel_using: document;;
+software_requirements => nrel_using: document;;
+
+

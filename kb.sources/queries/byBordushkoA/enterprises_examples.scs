@@ -1,0 +1,39 @@
+enterprise1
+	=> nrel_main_idtf:
+		[Glavmolsnab](*<- lang_en;;*);
+		[Главмолснаб](*<- lang_ru;;*);
+	<- enterprise;
+	=> nrel_email: [glavmolsnab@mail.by];
+	=> nrel_mailing_address: [ул. Степная, 55-321];;
+	
+enterprise2
+	=> nrel_main_idtf:
+		[Biomolprom](*<- lang_en;;*);
+		[Биомолпром](*<- lang_ru;;*);
+	<- enterprise;
+	=> nrel_email: [biomolprom@shmail.com];
+	=> nrel_mailing_address: [ул. Космонавтов, 999-111];;
+		
+enterprise4
+	=> nrel_main_idtf:
+		[Gormolzavod №666](*<- lang_en;;*);
+		[Гормолзавод №666](*<- lang_ru;;*);
+	<- enterprise;
+	=> nrel_email: [gormolzavod666@beemail.com];
+	=> nrel_mailing_address: [ул. Абрикосовая, 74-33];;
+
+enterprise5
+	=> nrel_main_idtf:
+		[Babushkin product](*<- lang_en;;*);
+		[Бабушкин продукт](*<- lang_ru;;*);
+	<- enterprise;
+	=> nrel_email: [babushkinproduct@mail.by];
+	=> nrel_mailing_address: [ул. Прибрежная, 32-65];;
+
+enterprise6
+	=> nrel_main_idtf:
+		[Dedushkina krynka](*<- lang_en;;*);
+		[Дедушкина крынка](*<- lang_ru;;*);
+	<- enterprise;
+	=> nrel_email: [dedushkina_krynka@shmail.com];
+	=> nrel_mailing_address: [ул. Лесная, 43-23];;

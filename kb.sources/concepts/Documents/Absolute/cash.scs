@@ -1,0 +1,27 @@
+cash_voucher
+=> nrel_main_idtf: [cash voucher](*<- lang_en;;*);
+			[кассовый чек](*<- lang_ru;;*);;
+document => nrel_inclusion: legal_document;;
+legal_document => nrel_inclusion: cash_voucher;;
+
+nrel_using_area <- sc_node_norole_relation;
+	 => nrel_main_idtf: 
+	[area of using](*<- lang_en;;*);
+	[область применения](*<- lang_ru;;*);;
+
+	 cash_voucher => nrel_using_area: 
+		purchase
+		(*
+			=> nrel_main_idtf: [purchase](*<-lang_en;;*);
+					[покупка](*<- lang_ru;;*);;
+		*);
+		sale
+		(*
+			=> nrel_main_idtf: [sale](*<-lang_en;;*);
+					[продажа](*<- lang_ru;;*);;
+		*);
+		exchange
+		(*
+			=> nrel_main_idtf: [exchange](*<-lang_en;;*);
+					[обмен](*<- lang_ru;;*);;
+		*);;

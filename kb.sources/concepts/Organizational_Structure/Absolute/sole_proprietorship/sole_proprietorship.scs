@@ -1,0 +1,23 @@
+sole_proprietorship
+	=> nrel_main_idtf:[Sole proprietorship](*<-lang_en;;*);
+		[Индивидуальный предприниматель](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Sole trader](*<-lang_en;;*);
+		[Proprietorship](*<-lang_en;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://sole_proprietorship_definition_en.html"
+					(*<- lang_en;;*);
+					"file://sole_proprietorship_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: natural_person;
+	=> nrel_used_constants:
+		{
+			juridical_person
+		};;

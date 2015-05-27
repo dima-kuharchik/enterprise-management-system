@@ -1,0 +1,15 @@
+document => nrel_inclusion: balanced_scorecard;;
+balanced_scorecard
+	=> nrel_main_idtf: [balanced_scorecard](*<- lang_en;;*);
+			[сбалансированная система показателей](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://balanced_scorecard.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+	=> nrel_using_constants: document;;

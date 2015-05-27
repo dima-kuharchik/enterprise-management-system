@@ -1,0 +1,21 @@
+nrel_maintainer
+	=> nrel_main_idtf:[Maintainer](*<-lang_en;;*);
+		[Сопровождающая сторона](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://nrel_maintainer_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_inclusion: organization; natural_person;
+	<- sc_type_norole_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	=> nrel_used_constants:
+		{
+			system
+		};;

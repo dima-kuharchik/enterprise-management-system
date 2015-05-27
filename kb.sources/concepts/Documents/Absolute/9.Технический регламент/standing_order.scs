@@ -1,0 +1,14 @@
+document => nrel_inclusion: standing_order;;
+standing_order
+	=> nrel_main_idtf: [standing order](*<- lang_en;;*);
+					   [регламент](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://standing_order.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);;

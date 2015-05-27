@@ -1,0 +1,36 @@
+regulations_document
+	=> nrel_main_idtf: [regulations](*<- lang_en;;*);
+			[нормативные документы](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://regulations_document.html"
+					(*<- lang_ru;;*);;			
+			*);;
+		*);
+=> nrel_inclusion:
+		regulations_document_standards
+		(*
+			=> nrel_main_idtf: [regulation document standards](*<-lang_en;;*);
+					[стандарты](*<- lang_ru;;*);;
+		*);
+		regulations_document_norms
+		(*
+			=> nrel_main_idtf: [regulations document norms](*<- lang_en;;*);
+					[нормы](*<- lang_ru;;*);;			
+		*);
+		regulations_document_rules
+		(*
+			=> nrel_main_idtf: [regulations document rules](*<- lang_en;;*);
+					[правила](*<- lang_ru;;*);;			
+		*);
+	    standing_order
+		(*
+			=> nrel_main_idtf: [standing order](*<- lang_en;;*);
+					[технический регламент](*<- lang_ru;;*);;			
+		*);;
+
+		document => nrel_inclusion: regulations_document ;;

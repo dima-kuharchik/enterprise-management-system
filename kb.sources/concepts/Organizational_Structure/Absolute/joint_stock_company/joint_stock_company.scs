@@ -1,0 +1,27 @@
+joint_stock_company
+	=> nrel_main_idtf:[Joint-stock company](*<-lang_en;;*);
+		[Акционерное общество](*<-lang_ru;;*);
+	=> nrel_idtf:
+		[Company limited by shares](*<-lang_en;;*);
+		[Corporation](*<-lang_en;;*);
+		[Public company](*<-lang_en;;*);
+		[Корпорация](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					"file://joint_stock_company_definition_ru.html"
+					(*<- lang_ru;;*);;
+			*);;
+		*);
+	=> nrel_inclusion: share;
+	=> nrel_used_constants:
+		{
+			administration;
+			enterprise;
+			capital;
+			natural_person;
+			juridical_person
+		};;
