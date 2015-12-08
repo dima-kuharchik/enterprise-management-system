@@ -1,0 +1,36 @@
+majorization
+        => nrel_main_idtf:
+                [majorization](*<- lang_en;;*);
+                [мажоризация](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (majorization)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (мажоризация)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>МАЖОРИЗАЦИЯ</b> - условное, осуществляемое в рекламных <sc_element sys_idtf="goal">целях</sc_element> участие <sc_element sys_idtf="investor">инвестора</sc_element> в предварительной подписке на <sc_element sys_idtf="share">акции</sc_element>, которые он в действительности не намерен приобретать.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>MAJORIZATION</b> - conventional, carried out promotional purposes <sc_element sys_idtf="investor">investor</sc_element> participation in the pre-subscription for the <sc_element sys_idtf="share">shares</sc_element>, which he does not really intend to purchase.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: activity;
+        <= nrel_using_constants:
+                {
+                        goal;
+                        investor;
+                        share
+                };;
+
+depositor
+        => nrel_main_idtf:
+                [investor](*<- lang_en;;*);
+                [инвестор](*<- lang_ru;;*);;

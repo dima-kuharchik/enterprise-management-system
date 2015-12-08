@@ -1,0 +1,31 @@
+open_monopoly
+        => nrel_main_idtf:
+                [open monopoly](*<- lang_en;;*);
+                [открытая монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (open monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (открытая монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Открытая монополия</b> - <sc_element sys_idtf="monopoly">монополия</sc_element>, являющаяся единственным продавцом на <sc_element sys_idtf="market">рынке</sc_element> какого-либо <sc_element sys_idtf="goods">товара</sc_element>, но не имеющая специальной защиты от <sc_element sys_idtf="competition">конкуренции</sc_element>. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Open monopoly</b> - a <sc_element sys_idtf="monopoly">monopoly</sc_element>, is the only vendor in the <sc_element sys_idtf="market">market</sc_element> any <sc_element sys_idtf="goods">product</sc_element>, but has no special protection from the <sc_element sys_idtf="competition">competition</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        market;
+                        goods;
+                        competition
+                };;

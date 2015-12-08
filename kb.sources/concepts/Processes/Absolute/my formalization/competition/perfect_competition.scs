@@ -1,0 +1,31 @@
+perfect_competition
+        => nrel_main_idtf:
+                [perfect competition](*<- lang_en;;*);
+                [совершенная конкуренция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (perfect competition)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (совершенная конкуренция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Совершенная конкуренция</b> - идеализированная конъюнктура рынка, при которой каждый участник рынка слишком мал для того, чтобы влиять своими действиями на рыночную цену акций. На таком рынке исключены все виды соперничества как между продавцами, так и между покупателями.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Perfect competition</b> - an idealized market environment, in which each participant of the market is too small to influence their actions on the market price of the shares. In such a market excluded all kinds of competition among sellers, as well as between customers.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: competition;
+        <= nrel_using_constants:
+                {
+                        market;
+                        price;
+                        share
+                };;

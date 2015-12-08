@@ -1,0 +1,47 @@
+privatization
+        => nrel_main_idtf:
+                [privatization](*<- lang_en;;*);
+                [приватизация](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (privatization)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (приватизация)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Приватизация</b> - <sc_element sys_idtf="act">aкт</sc_element> передачи государственных компаний в частный сектор экономики, обычно путем продажи.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Privatization</b> - the <sc_element sys_idtf="act">act</sc_element> of transfer of state-owned companies to the private sector, usually through the sale.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Существуют три основные функции, которые может решать приватизация: собственно экономическая (создание эффективного собственника), фискальная и социально-политическая. Однако они действуют однонаправленно только в условиях политической стабильности.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [There are three main functions that can solve the privatization: the actual economic (creation of an efficient owner), fiscal and socio-political. However, they operate unidirectionally only in terms of political stability.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        act
+                };;

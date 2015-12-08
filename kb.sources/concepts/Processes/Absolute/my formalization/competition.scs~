@@ -1,0 +1,48 @@
+competition
+        => nrel_main_idtf:
+                [competition](*<- lang_en;;*);
+                [конкуренция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (competition)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (конкуренция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>КОНКУРЕНЦИЯ</b> - состязание между экономическими субъектами: борьба за рынки сбыта <sc_element sys_idtf="goods">товаров</sc_element> с целью получения более высоких <sc_element sys_idtf="income">доходов</sc_element>, <sc_element sys_idtf="income">прибыли</sc_element>, других выгод.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>COMPETITION</b> - competition between economic actors: the struggle for markets products in order to generate higher revenues, <sc_element sys_idtf="income">profits</sc_element> and other benefits.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Конкуренция представляет цивилизованную, легализованную форму борьбы за существование и один из наиболее действенных механизмов отбора и регулирования в рыночной экономике.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [The competition is a civilized, legalized form of struggle for existence, and one of the most effective mechanisms for the selection and regulation of the market economy.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        income;
+                        goods
+                };;

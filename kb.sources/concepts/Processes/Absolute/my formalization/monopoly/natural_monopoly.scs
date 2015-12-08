@@ -1,0 +1,30 @@
+natural_monopoly
+        => nrel_main_idtf:
+                [natural monopoly](*<- lang_en;;*);
+                [естественная монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (natural monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (естественная монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Естественная монополия</b> - официально признанная неизбежная <sc_element sys_idtf="monopoly">монополия</sc_element> на производство и продажу <sc_element sys_idtf="goods">товаров</sc_element> и <sc_element sys_idtf="service">услуг</sc_element>, применительно к которым монополизм обусловлен либо естественными правами монополиста, либо соображениями экономической выгоды для всего государства и населения. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Natural monopoly</b> - officially recognized the inevitable <sc_element sys_idtf="monopoly">monopoly</sc_element> on the production and sale of <sc_element sys_idtf="goods">goods</sc_element> and <sc_element sys_idtf="service">services</sc_element> in relation to which the monopoly is due to a natural monopoly rights or considerations of economic benefits for the entire state and the population.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        goods;
+                        service
+                };;

@@ -1,0 +1,31 @@
+square_meter
+	=> nrel_main_idtf:[square meter](*<-lang_en;;*);
+			[квадратный метр](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Квадратный метр</b> - это единица измерения площади.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+                                        [<b>Square meter</b> - the unit of measure of area.]
+					(*
+						<- lang_en;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        area
+		};;
+
+area
+       => nrel_main_idtf: [area](*<- lang_en;;*);
+                                [площадь](*<- lang_ru;;*);;

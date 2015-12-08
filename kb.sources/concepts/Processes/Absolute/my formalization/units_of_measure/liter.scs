@@ -1,0 +1,31 @@
+liter
+	=> nrel_main_idtf:[liter](*<-lang_en;;*);
+			[литр](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Литр</b> - это единица измерения объема.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+                                        [<b>Liter</b> - is a unit of volume measurement.]
+					(*
+						<- lang_en;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        volume
+		};;
+
+volume
+       => nrel_main_idtf: [volume](*<- lang_en;;*);
+                                [объем](*<- lang_ru;;*);;

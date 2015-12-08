@@ -1,0 +1,32 @@
+monopolistic_competition
+        => nrel_main_idtf:
+                [monopolistic competition](*<- lang_en;;*);
+                [монополистическая конкуренция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (monopolistic competition)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (монополистическая конкуренция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Монополистическая конкуренция</b> - тип отраслевого рынка, на котором имеется достаточно большое число фирм, продающих дифференцированную продукцию и осуществляющих ценовой контроль над продажной ценой производимых ими товаров. Монополистическая конкуренция предполагает относительно свободный доступ на рынок. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Monopolistic competition</b> - type of industry market in which there is a sufficiently large number of firms selling differentiated products and pricing exercising control over the selling price of their products. Monopolistic competition involves relatively free access to the market.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: competition;
+        <= nrel_using_constants:
+                {
+                        market;
+                        firm;
+                        price;
+                        goods
+                };;

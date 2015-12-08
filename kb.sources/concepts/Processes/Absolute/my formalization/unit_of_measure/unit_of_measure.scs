@@ -1,0 +1,39 @@
+unit_of_measure
+            => nreal_main_idtf:  [unit of measure](*<-lang_en;;*);
+                         [единица измерения](*<- lang_ru;;*);
+            <- rrel_key_sc_element:...
+                    (*
+                            <- sc_definition;;
+                            => nrel_main_idtf: [Definition (unit of measure)](*<- lang_en;;*);;
+                            => nrel_main_idtf: [Определение (единица измерения)](*<- lang_ru;;*);;
+                            <= nrel_sc_text_translation:...
+                            (*
+                                    -> rrel_example:
+                                            [<b>Единица измерения</b> - это действительная скалярная величина, определенная и принятая по соглашению, с которой можно сравнивать любую другую величину того же рода и выразить их отношение в виде числа.]
+                                            (*
+                                                    <- lang_ru;;
+                                                    => nrel_format: format_html;;
+                                            *);
+                                            [<b>Unit of measure</b> - a real scalar quantity, defined and adopted by convention, with which to compare the value of any other of the same kind and to express their attitude in a number.]
+                                            (*
+                                                    <- lang_en;;
+                                                    => nrel_format: format_html;;
+                                            *);;
+                            *);;
+                    *);
+            => nrel_inclusion: units_of_measure; 
+            <= nrel_using_constants:
+                    {
+                            magnitude;
+                            agreement;
+                            relation;
+                            number
+                    };;
+
+agreement
+            => nrel_main_idtf: [agreement](*<- lang_en;;*);
+                                    [соглашение](*<- lang_ru;;*);;
+
+number
+            => nrel_main_idtf: [number](*<- lang_en;;*);
+                                    [число](*<- lang_ru;;*);;

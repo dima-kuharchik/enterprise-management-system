@@ -1,0 +1,163 @@
+market
+        => nrel_main_idtf:
+                [market](*<- lang_en;;*);
+                [рынок](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (market)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (рынок)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Рынок</b> - это совокупность конкретных экономических <sc_element sys_idtf="relation">отношений</sc_element> и связей между покупателями и продавцами, а также торговыми посредниками по поводу движения <sc_element sys_idtf="goods">товара</sc_element> и <sc_element sys_idtf="money">денег</sc_element>, отражающая экономические интересы субъектов рыночных отношений и обеспечивающая <sc_element sys_idtf="exchange">обмен</sc_element> <sc_element sys_idtf="end_product">продуктами</sc_element> труда.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Market</b> - a set of specific economic <sc_element sys_idtf="relation">relations</sc_element> and <sc_element sys_idtf="relation">relations</sc_element> between buyers and sellers and resellers about the movement of <sc_element sys_idtf="goods">goods</sc_element> and <sc_element sys_idtf="money">money</sc_element>, reflects the economic interests of the market relations and facilitates the <sc_element sys_idtf="exchange">exchange</sc_element> of <sc_element sys_idtf="end_product">products</sc_element> of labor.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+			      carrency_market;
+			      financial_market;
+			      kerbstone_market
+		       };
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<sc_element sys_idtf="exchange">Обмен</sc_element> на рынке обычно происходит на добровольной основе в форме товара на <sc_element sys_idtf="money">деньги</sc_element> или товара на товар.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<sc_element sys_idtf="exchange">Exchange</sc_element> market usually takes place on a voluntary basis in the form of <sc_element sys_idtf="money">money</sc_element> or goods in one commodity for another.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                         *);;
+                 *);
+         <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Конкурентными считаются <sc_element sys_idtf="market">рынки</sc_element> со значительным числом независимых участников.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Competitive <sc_element sys_idtf="market">markets</sc_element> are considered to be a significant number of independent members.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                         *);;
+                 *);
+         <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<sc_element sys_idtf="market">Рынок</sc_element> с одним продавцом и несколькими покупателями называется <sc_element sys_idtf="monopoly">монополией</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<sc_element sys_idtf="market">Market</sc_element> with a single vendor and a few customers called <sc_element sys_idtf="monopoly">monopoly</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: activity;
+        <= nrel_using_constants:
+                {
+                        economy;
+                        relation;
+                        operation;
+                        industrial_enterprise;
+                        nrel_consumer
+                };;
+
+carrency_market
+	=> nrel_main_idtf:
+		[carrency market](*<- lang_en;;*);
+		[валютный рынок](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Валютный рынок</b>  — это система устойчивых экономических и организационных отношений, возникающих при осуществлении операций по покупке или продаже иностранной валюты, платежных документов в иностранных валютах, а также операций по движению капитала иностранных инвесторов.]
+					(*<- lang_ru;;*);
+                                         [<b>Carrency market</b> - a system of sustainable economic and organizational relationships arising in the implementation of operations on the purchase or sale of foreign currency and payment documents in foreign currencies, as well as operations on the movement of capital from foreign investors.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;			
+			*);;
+		*);;
+
+financial_market
+	=> nrel_main_idtf:
+		[financial market](*<- lang_en;;*);
+		[финансовый рынок](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Финансовый рынок</b> — система отношений, возникающая в процессе обмена экономических благ с использованием денег в качестве актива-посредника.]
+					(*<- lang_ru;;*);
+                                        [<b>Financial market</b> - a system of relations arising in the process of sharing of economic benefits from the use of money as an asset proxy.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;			
+			*);;
+		*);;
+
+kerbstone_market
+	=> nrel_main_idtf:
+		[kerbstone market](*<- lang_en;;*);
+		[черный рынок](*<- lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Чёрный ры́нок</b> — социальный институт теневой экономики в части незаконного обращения товаров и услуг на рынке.]
+					(*<- lang_ru;;*);
+			                [<b>Kerbstone market</b> - the social institution of the shadow economy in terms of the illegal circulation of goods and services in the market.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+			*);;
+		*);;
+
+economy
+	=> nrel_main_idtf:
+		[economy](*<- lang_en;;*);
+		[хозяйство](*<- lang_ru;;*);;
+
+industrial_enterprise
+	=> nrel_main_idtf:
+		[industrial enterprise](*<- lang_en;;*);
+		[предприятие-производитель](*<- lang_ru;;*);;

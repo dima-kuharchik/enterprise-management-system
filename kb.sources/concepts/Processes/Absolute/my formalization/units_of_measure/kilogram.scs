@@ -1,0 +1,31 @@
+kilogram
+	=> nrel_main_idtf:[kilogram](*<-lang_en;;*);
+			[килограмм](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Килограмм</b> - это единица измерения массы.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+                                        [<b>Kilogram</b> - is a measure of mass.]
+					(*
+						<- lang_en;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        mass
+		};;
+
+mass
+       => nrel_main_idtf: [mass](*<- lang_en;;*);
+                                [масса](*<- lang_ru;;*);;

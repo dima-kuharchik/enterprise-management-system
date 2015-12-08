@@ -1,0 +1,29 @@
+intersectoral_competition
+        => nrel_main_idtf:
+                [intersectoral competition](*<- lang_en;;*);
+                [межотраслевая конкуренция](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (intersectoral competition)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (межотраслевая конкуренция)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Mежотраслевая конкуренция</b> - конкуренция продукции, производимой предприятиями одной отрасли, с продукцией, производимой предприятиями других отраслей.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Intersectoral competition</b> - the competition of products manufactured by enterprises of the same industry, with products produced by companies in other industries.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: competition;
+        <= nrel_using_constants:
+                {
+                        industry
+                };;

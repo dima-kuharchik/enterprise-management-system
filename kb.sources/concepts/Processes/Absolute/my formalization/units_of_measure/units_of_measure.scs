@@ -1,0 +1,88 @@
+units_of_measure
+	=> nrel_main_idtf:
+		[units of measure](*<- lang_en;;*);
+		[единицы измерения](*<- lang_ru;;*);
+	<= nrel_subdividing:
+		{
+			piece;
+                        kilogram;
+                        meter;
+                        square_meter;
+                        hour;
+                        pascal;
+                        liter;
+			thousand_of_pieces;
+			monetary_unit
+		};;
+		
+piece
+	=> nrel_main_idtf:
+		[piece(s)](*<- lang_en;;*);
+		[штук(а)](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[pcs.](*<- lang_en;;*);
+		[шт.](*<- lang_ru;;*);;
+
+kilogram
+        => nrel_main_idtf:
+                 [kilogram(s)](*<- lang_en;;*);
+                 [килограмм(ы)](*<- lang_ru;;*);
+        => nrel_idtf:
+                [kg.](*<- lang_en;;*);
+                [кг.](*<- lang_ru;;*);;
+
+meter
+        => nrel_main_idtf:
+                 [meter(s)](*<- lang_en;;*);
+                 [метр(ы)](*<- lang_ru;;*);
+        => nrel_idtf:
+                [m.](*<- lang_en;;*);
+                [м.](*<- lang_ru;;*);;
+
+square_meter
+        => nrel_main_idtf:
+                 [square meter](*<- lang_en;;*);
+                 [метр квадратный](*<- lang_ru;;*);
+        => nrel_idtf:
+                [m^2.](*<- lang_en;;*);
+                [м^2.](*<- lang_ru;;*);
+        => nrel_using_constants:
+		{
+			meter
+		};;
+
+hour
+        => nrel_main_idtf:
+                 [hour(s)](*<- lang_en;;*);
+                 [час(ы)](*<- lang_ru;;*);
+        => nrel_idtf:
+                [hr.](*<- lang_en;;*);
+                [ч.](*<- lang_ru;;*);;
+
+pascal
+        => nrel_main_idtf:
+                 [pascal](*<- lang_en;;*);
+                 [паскаль](*<- lang_ru;;*);
+        => nrel_idtf:
+                [Pa.](*<- lang_en;;*);
+                [Па.](*<- lang_ru;;*);;
+
+liter
+        => nrel_main_idtf:
+                 [liter](*<- lang_en;;*);
+                 [литр](*<- lang_ru;;*);
+        => nrel_idtf:
+                [l.](*<- lang_en;;*);
+                [л.](*<- lang_ru;;*);;
+	
+thousand_of_pieces
+	=> nrel_main_idtf:
+		[thousand(s) of pieces](*<- lang_en;;*);
+		[тысяч штук](*<- lang_ru;;*);
+	=> nrel_idtf:
+		[thous. pcs.](*<- lang_en;;*);
+		[тыс. шт.](*<- lang_ru;;*);
+	=> nrel_using_constants:
+		{
+			piece
+		};;

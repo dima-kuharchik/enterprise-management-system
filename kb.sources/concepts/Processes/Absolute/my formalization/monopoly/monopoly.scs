@@ -1,0 +1,58 @@
+monopoly
+        => nrel_main_idtf:
+                [monopoly](*<- lang_en;;*);
+                [монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>МОНОПОЛИЯ</b> - крупная компания, корпорация, объединяющая несколько компаний и достигающая благодаря этому положения на <sc_element sys_idtf="market">рынке</sc_element> определенного <sc_element sys_idtf="goods">товара</sc_element> или группы товаров, когда рынок имеет только одного продавца и множество покупателей.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>MONOPOLY</b> - large company, corporation, which unites a number of companies and is achieved thanks to this position in the <sc_element sys_idtf="market">market</sc_element> a certain product or group of products, the market is only one seller and many buyers.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+                    bilateral_monopoly;
+	            absolute_monopoly;
+	            natural_monopoly;
+                    private_monopoly;
+                    open_monopoly;
+                    entrepreneurial_monopoly;
+                    easy_monopoly
+		       };
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [В ряде случаев монопольное право не предоставляется, а возникает естественным путем или устанавливается экономическими субъектами посредством занятия господствующего положения на рынке товаров и услуг.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [In some cases a monopoly is not available, and there is a natural way or by means of set economic actors classes dominant position in the market of goods and services.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: market;
+        <= nrel_using_constants:
+                {
+                        market;
+                        goods
+                };;

@@ -1,0 +1,29 @@
+private_monopoly
+        => nrel_main_idtf:
+                [private monopoly](*<- lang_en;;*);
+                [закрытая монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (private monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (закрытая монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Закрытая монополия</b> - официальная юридически защищенная <sc_element sys_idtf="monopoly">монополия</sc_element>, действующая в тех областях экономики, где <sc_element sys_idtf="competition">конкуренция</sc_element> подвержена запретам. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Private monopoly</b> - official legally protected <sc_element sys_idtf="monopoly">monopoly</sc_element> operating in those areas of the economy where <sc_element sys_idtf="competition">competition</sc_element> is subject to the prohibitions.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        competition
+                };;

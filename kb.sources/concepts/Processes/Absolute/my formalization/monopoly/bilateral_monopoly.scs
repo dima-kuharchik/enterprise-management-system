@@ -1,0 +1,29 @@
+bilateral_monopoly
+        => nrel_main_idtf:
+                [bilateral monopoly](*<- lang_en;;*);
+                [двусторонняя монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (bilateral monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (двусторонняя монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Двусторонняя монополия</b> - <sc_element sys_idtf="market">рынок</sc_element>, на котором одному монопольному продавцу противостоит один монопольный покупатель.  ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Bilateral monopoly</b> - a <sc_element sys_idtf="market">market</sc_element> in which one monopoly seller confronts a monopoly buyer.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        market
+                };;

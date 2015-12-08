@@ -1,0 +1,26 @@
+piece
+	=> nrel_main_idtf:[piece](*<-lang_en;;*);
+			[штука](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Штука</b> - это единица измерения величина.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        magnitude
+		};;
+
+magnitude
+       => nrel_main_idtf: [magnitude](*<- lang_en;;*);
+                                [величина](*<- lang_ru;;*);;

@@ -1,0 +1,31 @@
+hour
+	=> nrel_main_idtf:[hour](*<-lang_en;;*);
+			[час](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Час</b> - это единица измерения времени.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+                                        [<b>Hour</b> - is the unit of measurement of time.]
+					(*
+						<- lang_en;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        time
+		};;
+
+time
+       => nrel_main_idtf: [time](*<- lang_en;;*);
+                                [время](*<- lang_ru;;*);;

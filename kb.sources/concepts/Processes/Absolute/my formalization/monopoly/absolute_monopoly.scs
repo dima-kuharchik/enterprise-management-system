@@ -1,0 +1,31 @@
+absolute_monopoly
+        => nrel_main_idtf:
+                [absolute monopoly](*<- lang_en;;*);
+                [чистая монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (absolute monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (чистая монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Чистая монополия</b> - положение на <sc_element sys_idtf="market">рынке</sc_element> товаров и услуг, характеризуемое наличием только одного продавца данного вида товара или услуги. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Absolute monopoly</b> - position in the <sc_element sys_idtf="market">market</sc_element> of goods and services, characterized by the presence of only one seller of the type of goods or services.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        goods;
+                        market;
+                        service
+                };;

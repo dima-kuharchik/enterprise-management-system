@@ -1,0 +1,63 @@
+order
+        => nrel_main_idtf:
+                [order](*<- lang_en;;*);
+                [заказ](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (order)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (заказ)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Заказ</b> - предложение покупателя, потребителя изготовить, поставить, продать ему продукцию, <sc_element sys_idtf="goods">товар</sc_element> определенного вида и качества или выполнить работу, оказать <sc_element sys_idtf="service">услуги</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Order</b> - offer buyer, consumer produce, deliver, sell him a product, a specific product type and quality, or perform work, provide <sc_element sys_idtf="service">services</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Заказ должен содержать сведения о запрашиваемых товарах и услугах (количество, свойства), сроках его выполнения, виде и величине оплаты.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Order must contain information about the requested goods and services (number of properties), the timing of its implementation, the form and amount of payment.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process; action;
+        <= nrel_using_constants:
+                {
+                        information;
+                        goods;
+                        service;
+                        method_of_payment;
+                        value_of_payment
+                };;
+
+information
+            => nrel_main_idtf: [information](*<- lang_en;;*);
+                                    [информация](*<- lang_ru;;*);;
+
+method_of_payment
+            => nrel_main_idtf: [method of payment](*<- lang_en;;*);
+                                    [вид оплаты](*<- lang_ru;;*);;
+
+value_of_payment
+            => nrel_main_idtf: [value of payment](*<- lang_en;;*);
+                                    [величина оплаты](*<- lang_ru;;*);;

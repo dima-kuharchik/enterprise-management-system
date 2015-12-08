@@ -1,0 +1,51 @@
+wages
+        => nrel_main_idtf:
+                [wages](*<- lang_en;;*);
+                [заработная плата](*<- lang_ru;;*);
+        => nrel_idtf:
+                [w.](*<- lang_en;;*);
+                [з/п](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (wages)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (заработная плата)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ЗАРАБОТНАЯ ПЛАТА</b> - денежное вознаграждение за труд; часть <sc_element sys_idtf="cost">стоимости</sc_element> созданного трудом продукта, <sc_element sys_idtf="income">дохода</sc_element> от его продажи, выдаваемая <sc_element sys_idtf="employee">работнику</sc_element> предприятием, учреждением, в котором он работает, или другим нанимателем. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>WAGES</b> - a fixed regular payment, typically paid on a daily or weekly basis, made by an employer to an <sc_element sys_idtf="employee">employee</sc_element>, especially to a manual or unskilled worker. ]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Величина заработной платы устанавливается либо в виде должностного оклада, либо по тарифной сетке (ставке), либо в соответствии с контрактом, но не может быть ниже уровня установленной законом минимальной заработной платы. Верхний предел заработной платы в условиях экономики рыночного типа обычно не ограничивается.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [The value of wages is established either as a salary or on the scale of charges (interest rate), or in accordance with the contract, but can not be lower than the statutory minimum wage. Upper limit of salary in an economy of the market type is usually not limited.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_using_constants:
+                {
+                        employee;
+                        cost;
+                        income
+                };;

@@ -1,0 +1,30 @@
+easy_monopoly
+        => nrel_main_idtf:
+                [easy monopoly](*<- lang_en;;*);
+                [простая монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (easy monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (простая монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Простая монополия</b> - монопольная <sc_element sys_idtf="competition">конкуренция</sc_element>, при которой монополист назначает только одну <sc_element sys_idtf="price">цену</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Easy monopoly</b> - monopolistic <sc_element sys_idtf="competition">competition</sc_element>, in which the monopolist assigns only one <sc_element sys_idtf="price">price</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        competition;
+                        price
+                };;

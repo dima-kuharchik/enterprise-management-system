@@ -1,0 +1,31 @@
+pascal
+	=> nrel_main_idtf:[pascal](*<-lang_en;;*);
+			[паскаль](*<-lang_ru;;*);
+	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+				-> rrel_example:
+					[<b>Паскаль</b> - это единица измерения давления.]
+					(*
+						<- lang_ru;;
+						=> nrel_format: format_html;;
+					*);
+                                        [<b>Pascal</b> - the unit of measure of pressure.]
+					(*
+						<- lang_en;;
+						=> nrel_format: format_html;;
+					*);;
+			*);;
+		*);
+	<= nrel_inclusion: units_of_measure;
+	<= nrel_using_constants:
+		{
+			unit_of_measure;
+                        pressure
+		};;
+
+pressure
+       => nrel_main_idtf: [pressure](*<- lang_en;;*);
+                                [давление](*<- lang_ru;;*);;

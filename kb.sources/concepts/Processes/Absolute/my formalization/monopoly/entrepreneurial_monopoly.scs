@@ -1,0 +1,40 @@
+entrepreneurial_monopoly
+        => nrel_main_idtf:
+                [entrepreneurial monopoly](*<- lang_en;;*);
+                [предпринимательская монополия](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (entrepreneurial monopoly)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (предпринимательская монополия)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Предпринимательская монополия</b> - рыночная ситуация, в которой одна или несколько <sc_element sys_idtf="firm">фирм</sc_element> занимают господствующее положение в <sc_element sys_idtf="industry">отрасли</sc_element>. ]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>Entrepreneurial monopoly</b> - a market situation in which one or more <sc_element sys_idtf="firm">companies</sc_element> in a dominant position in the <sc_element sys_idtf="industry">industry</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: monopoly;
+        <= nrel_using_constants:
+                {
+                        firm;
+                        industry
+                };;
+
+firm
+        => nrel_main_idtf:
+                [firm](*<- lang_en;;*);
+                [фирма](*<- lang_ru;;*);;
+
+industry
+             => nrel_main_idtf:
+                [industry](*<- lang_en;;*);
+                [отрасль](*<- lang_ru;;*);;
