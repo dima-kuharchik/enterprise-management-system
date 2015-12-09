@@ -1,0 +1,35 @@
+budget
+        => nrel_main_idtf:
+                [budget](*<- lang_en;;*);
+                [бюджет](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (budget)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (бюджет)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Бюдже́т</b>  — схема <sc_element sys_idtf="income">доходов</sc_element> и <sc_element sys_idtf="consumption">расходов</sc_element> определённого объекта, устанавливаемая на определённый период времени, обычно на один год.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Budget</b> - scheme of <sc_element sys_idtf="income">revenues</sc_element> and <sc_element sys_idtf="consumption">expenses</sc_element> of a certain object, installed for a certain period of time, usually one year.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: money;
+        <= nrel_using_constants:
+                {
+                        income;
+                        consumption
+                };;
+
+consumption
+        => nrel_main_idtf:
+                [consumption](*<- lang_en;;*);
+                [расход](*<- lang_ru;;*);;

@@ -1,0 +1,29 @@
+expanded_reproduction
+        => nrel_main_idtf:
+                [expanded reproduction](*<- lang_en;;*);
+                [расширенное воспроизводство](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (expanded reproduction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (расширенное воспроизводство)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Расширенное воспроизводство</b> - <sc_element sys_idtf="reproduction">воспроизводство</sc_element> во все увеличивающихся размерах.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Expanded reproduction</b> - <sc_element sys_idtf="reproduction">reproduction</sc_element> of all size increases.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        production
+                };;

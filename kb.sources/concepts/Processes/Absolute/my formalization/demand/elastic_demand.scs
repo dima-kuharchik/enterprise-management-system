@@ -1,0 +1,29 @@
+elastic_demand
+        => nrel_main_idtf:
+                [elastic demand](*<- lang_en;;*);
+                [эластичный спрос](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (elastic demand)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (эластичный спрос)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ЭЛАСТИЧНЫЙ СПРОС</b> - <sc_element sys_idtf="demand">спрос</sc_element> с высокой чувствительностью его величины к изменению <sc_element sys_idtf="price">цены</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>ELASTIC DEMAND</b> - <sc_element sys_idtf="demand">demand</sc_element> is highly sensitive to changes in the value of its <sc_element sys_idtf="price">price</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        price
+                };;

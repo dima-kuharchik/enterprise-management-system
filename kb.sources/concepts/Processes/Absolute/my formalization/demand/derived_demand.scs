@@ -1,0 +1,29 @@
+derived_demand
+        => nrel_main_idtf:
+                [derived demand](*<- lang_en;;*);
+                [производственный спрос](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (derived demand)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (производственный спрос)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ПРОИЗВОДНЫЙ СПРОС</b> - <sc_element sys_idtf="demand">спрос</sc_element> на производственные ресурсы (факторы производства), определяемый спросом на <sc_element sys_idtf="goods">товары</sc_element>, для производства которых эти ресурсы используются.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>DERIVED DEMAND</b> - <sc_element sys_idtf="demand">demand</sc_element> for inputs (factors of production), determine the demand for <sc_element sys_idtf="goods">products</sc_element> for the manufacture of which these resources are used.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                       goods
+                };;

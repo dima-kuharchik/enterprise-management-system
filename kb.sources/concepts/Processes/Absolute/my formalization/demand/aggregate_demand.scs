@@ -1,0 +1,49 @@
+aggregate_demand
+        => nrel_main_idtf:
+                [aggregate demand](*<- lang_en;;*);
+                [совокупный спрос](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (aggregate demand)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (совокупный спрос)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>СОВОКУПНЫЙ СПРОС</b> - общий объем <sc_element sys_idtf="demand">спроса</sc_element> на <sc_element sys_idtf="goods">товары</sc_element> и <sc_element sys_idtf="service">услуги</sc_element>, определяемый как сумма спроса потребителя на потребительские товары, услуги предприятий, <sc_element sys_idtf="firm">фирм</sc_element>, предпринимателей, а также на инвестиционные товары.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>AGGREGATE DEMAND</b> - total <sc_element sys_idtf="demand">demand</sc_element> for <sc_element sys_idtf="goods">goods</sc_element> and <sc_element sys_idtf="service">services</sc_element>, defined as the sum of the consumer's demand for consumer goods, services, businesses, <sc_element sys_idtf="firm">companies</sc_element>, entrepreneurs, as well as for investment goods.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Совокупный спрос  зависит, прежде всего, от доходов населения и фирм.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Aggregate demand depends primarily on household incomes and companies.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                       goods;
+                       service;
+                       firm
+                };;

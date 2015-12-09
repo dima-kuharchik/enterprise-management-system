@@ -1,0 +1,25 @@
+potential_demand
+        => nrel_main_idtf:
+                [potential demand](*<- lang_en;;*);
+                [потенциальный спрос](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (potential demand)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (потенциальный спрос)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ПОТЕНЦИАЛЬНЫЙ СПРОС</b> - <sc_element sys_idtf="demand">спрос</sc_element>, определяемый покупательной способностью, числом потенциальных потребителей и уровнем их потребности.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>POTENTIAL DEMAND</b> - <sc_element sys_idtf="demand">demand</sc_element> is determined by purchasing power, the number of potential customers and the level of their needs.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;;

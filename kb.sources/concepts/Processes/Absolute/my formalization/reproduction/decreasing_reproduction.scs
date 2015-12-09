@@ -1,0 +1,29 @@
+decreasing_reproduction
+        => nrel_main_idtf:
+                [decreasing reproduction](*<- lang_en;;*);
+                [убывающее воспроизводство](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (decreasing reproduction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (убывающее воспроизводство)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Убывающее воспроизводство</b> - <sc_element sys_idtf="reproduction">воспроизводство</sc_element> во все уменьшающихся размерах.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Decreasing reproduction</b> - <sc_element sys_idtf="reproduction">reproduction</sc_element> of all reduces the size..]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        reproduction
+                };;

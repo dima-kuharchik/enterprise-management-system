@@ -1,0 +1,35 @@
+reproduction
+        => nrel_main_idtf:
+                [reproduction](*<- lang_en;;*);
+                [воспроизводство](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (reproduction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (воспроизводство)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ВОСПРОИЗВОДСТВО</b> - воссоздание израсходованных факторов <sc_element sys_idtf="production">производства</sc_element> посредством их последующего <sc_element sys_idtf="production">производства</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>REPRODUCTION</b> - a reconstruction of the factors of <sc_element sys_idtf="production">production</sc_element> consumed by the subsequent <sc_element sys_idtf="production">production</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_subdividing:
+		      {
+			      decreasing_reproduction;
+			      simple_reproduction;
+			      expanded_reproduction
+		       };
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        production
+                };;

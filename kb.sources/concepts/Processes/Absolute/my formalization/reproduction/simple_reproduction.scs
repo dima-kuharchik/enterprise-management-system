@@ -1,0 +1,29 @@
+simple_reproduction
+        => nrel_main_idtf:
+                [simple reproduction](*<- lang_en;;*);
+                [простое воспроизводство](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (simple reproduction)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (простое воспроизводство)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Простое воспроизводство</b> - <sc_element sys_idtf="reproduction">воспроизводство</sc_element> в неизменных размерах.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Simple reproduction</b> - <sc_element sys_idtf="reproduction">reproduction</sc_element> in the size unchanged.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                        reproduction
+                };;

@@ -1,0 +1,54 @@
+demand
+        => nrel_main_idtf:
+                [demand](*<- lang_en;;*);
+                [спрос](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (demand)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (спрос)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>СПРОС</b> - одно из фундаментальных понятий рыночной экономики, означающее подкрепленное денежной возможностью желание, намерение покупателей, потребителей приобрести данный <sc_element sys_idtf="goods">товар</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>DEMAND</b> - one of the fundamental concepts of the market economy, supported by monetary meaning the possibility of a desire, the intention of customers, customers to buy this <sc_element sys_idtf="goods">product</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+               <= nrel_subdividing:
+		      {
+			      aggregate_demand;
+			      elastic_demand;
+			      derived_demand;
+                     potential_demand
+		       };
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Спрос характеризуется его величиной, означающей количество товара, которое покупатель желает и способен приобрести по данной цене в данный период времени. Объем и структура спроса зависят как от цен на товар, так и от других, неценовых факторов, таких, как мода, доходы потребителей, а также от цены на другие товары, в том числе на товары-заменители и на сопряженные, сопутствующие товары.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [Demand is characterized by its value is the amount of goods that the buyer is willing and able to buy at a given price at a given time. The volume and structure of demand depend on the prices of goods, and on the other, non-price factors, such as fashion, consumer income and the price of other products, including substitute products and associated, related products.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: process;
+        <= nrel_using_constants:
+                {
+                       goods
+                };;
