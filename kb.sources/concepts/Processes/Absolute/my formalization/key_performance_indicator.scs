@@ -1,0 +1,53 @@
+key_performance_indicator
+        => nrel_main_idtf:
+                [key performance indicator](*<- lang_en;;*);
+                [ключевой показатель эффективности](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (key performance indicator)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (ключевой показатель эффективности)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>Ключевой показатель эффективности</b> — показатель деятельности подразделения (предприятия), который помогает организации в достижении стратегических и тактических (операционных) <sc_element sys_idtf="goal">целей</sc_element>.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [<b>Key performance indicator</b> - performance unit (enterprises) to help the organization achieve strategic and tactical (operational) <sc_element sys_idtf="goal">goals</sc_element>.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_statement;;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [Использование ключевых показателей эффективности даёт организации возможность оценить своё состояние и помочь в оценке реализации стратегии.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                [The use of key performance indicators gives the organization the opportunity to assess their condition and help in assessing the implementation of the strategy.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+        <= nrel_inclusion: activity;
+        <= nrel_using_constants:
+                {
+                        goal;
+                        enterprise
+                };;
+
+enterprise
+        => nrel_main_idtf:
+                [enterprise](*<- lang_en;;*);
+                [предприятие](*<- lang_ru;;*);;

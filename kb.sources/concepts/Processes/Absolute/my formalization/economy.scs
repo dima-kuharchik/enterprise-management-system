@@ -1,0 +1,64 @@
+economy
+        => nrel_main_idtf:
+                [economy](*<- lang_en;;*);
+                [хозяйство](*<- lang_ru;;*);
+        <- rrel_key_sc_element:...
+                (*
+                        <- sc_definition;;
+                        => nrel_main_idtf: [Definition (economy)](*<- lang_en;;*);;
+                        => nrel_main_idtf: [Определение (хозяйство)](*<- lang_ru;;*);;
+                        <= nrel_sc_text_translation:...
+                                (*
+                                        -> rrel_example:
+                                                [<b>ХОЗЯЙСТВО</b> - совокупность природных и произведенных в результате деятельности человека средств, используемых для создания, поддержания, улучшения условий и средств существования, жизнеобеспечения.]
+                                                (*
+                                                        <- lang_ru;;
+                                                        => nrel_format: format_html;;
+                                                *);
+                                                 [<b>ECONOMY</b> - a set of natural and produced by human activity means used for creating, maintaining, and improving the livelihoods of life support.]
+                                                (*
+                                                        <- lang_en;;
+                                                        => nrel_format: format_html;;
+                                                *);;
+                                        *);;
+                *);
+          <= nrel_subdividing:
+		      {
+			      rural_economy;
+			      planned_economics;
+			      national_economy;
+                    natural_economy;
+                    commodity_economy;
+                    household
+		       };
+        <= nrel_inclusion: activity;;
+
+rural_economy
+        => nrel_main_idtf:
+                [rural economy](*<- lang_en;;*);
+                [сельское хозяйство](*<- lang_ru;;*);;
+
+planned_economics
+        => nrel_main_idtf:
+                [planned economics](*<- lang_en;;*);
+                [плановое хозяйство](*<- lang_ru;;*);;
+
+national_economy
+        => nrel_main_idtf:
+                [national economy](*<- lang_en;;*);
+                [народное хозяйство](*<- lang_ru;;*);;
+
+natural_economy
+        => nrel_main_idtf:
+                [natural economy](*<- lang_en;;*);
+                [натуральное  хозяйство](*<- lang_ru;;*);;
+
+commodity_economy
+        => nrel_main_idtf:
+                [commodity economy](*<- lang_en;;*);
+                [товарное хозяйство](*<- lang_ru;;*);;
+
+household
+        => nrel_main_idtf:
+                [household](*<- lang_en;;*);
+                [домашнее хозяйство](*<- lang_ru;;*);;
